@@ -1,125 +1,412 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Simon Chauvin</title>
-        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Simon Chauvin - Game Designer and Programmer">
+        <meta name="author" content="Simon Chauvin">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" href="favicon.ico">
+        
+        <title>{ Simon Chauvin }</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Content -->
-        <div id="content">
-            <a id="top" name="top"></a>
-            <div id="header" class="section">
-                <h1>{&nbsp;<a href="index.html"><span class="red">S</span>imon <span class="red">C</span>hauvin</a>&nbsp;}</h1>
+        <div class="container">
+            <!-- HEADER -->
+            <div class="header">
+                <nav>
+                    <ul class="nav nav-pills pull-right">
+                        <li role="presentation"><a href="#projects">PROJECTS</a></li>
+                        <li role="presentation"><a href="#about">ABOUT</a></li>
+                        <li role="presentation"><a href="#">BLOG</a></li>
+                    </ul>
+                </nav>
+                <h2 class="title">{<a href="http://www.simonchauvin.com">&nbsp;Simon&nbsp;Chauvin&nbsp;</a>}</h2>
             </div>
-            <div id="menu" class="section">
-                <span>(&nbsp;&nbsp;</span>
-                <a href="./index.html#projects">Projects</a>
-                <span>&nbsp;&nbsp;||&nbsp;&nbsp;</span>
-                <a href="./index.html#about">About</a>
-                <span>&nbsp;&nbsp;||&nbsp;&nbsp;</span>
-                <a href="./index.html#contacts">Contacts</a>
-                <span>&nbsp;&nbsp;)</span>
-                <hr>
-            </div>
-            <div id="projects" class="section">
-                <h2 class="title">/** <span class="red">P</span>rojects **/</h2>
-                <a id="projects" name="projects"></a>
-                <p id="list_projects">
-                    <a href="fm.js-engine.html"  id="fmjsengine" class="project"><img src="img/fmjsengine.png" alt="{FM.js(engine);}" width="300"></a>
-                    <a href="a-thing.html" id="athing" class="project"><img src="img/athing.png" alt="A Thing" width="300"></a>
-                    <a href="work-me.html"  id="workme" class="project"><img src="img/workme.png" alt="Work Me" width="300"></a>
-                    <a href="down-the-line.html" id="downtheline" class="project"><img src="img/downtheline.png" alt="Down the Line" width="300"></a>
-                    <a href="overflowed.html" id="overflowed" class="project"><img src="img/overflowed.png" alt="Overflowed" width="300"></a>
-                    <a href="the-core-of-life.html" id="thecoreoflife" class="project"><img src="img/thecoreoflife.png" alt="The Core of Life" width="300"></a>
-                    <a href="newsleaks.html"  id="newsleaks" class="project"><img src="img/newsleaks.png" alt="NewsLeaks" width="300"></a>
-                    <a href="perspective.html" id="perspective" class="project"><img src="img/perspective.png" alt="Perspective" width="300"></a>
-                    <a href="stream.html" id="stream" class="project"><img src="img/stream.png" alt="Stream" width="300"></a>
-                    <a href="wave-me.html"  id="waveme" class="project"><img src="img/waveme.png" alt="Wave Me" width="300"></a>
-                </p>
-                <p>
-                    <a href="https://github.com/simonchauvin"><img src="img/github.png" alt="Github repos" width="25"></a>&nbsp;//GitHub repos
-                </p>
-            </div>
-            <div id="about" class="section">
-                <h2 class="title">/** <span class="red">A</span>bout me **/</h2>
-                <a id="about" name="about"></a>
-                <p>
-                    I’m a PhD candidate at the Conservatoire National des Arts et Métiers (CNAM) in Paris. After studying computer science and game design, I’m now using all this knowledge to unveil the specific nature of narratives in games. I also develop games on my spare time as a game designer and programmer and I particularly enjoy games with a strong focus on simple mechanics, proceduralism and/or expressiveness, but I’m still undecided about which one I prefer.
-                </p>
-                <p>
-                    <a href="http://fr.linkedin.com/in/chauvinsimon"><img src="img/linkedin.png" alt="Linkedin profile" width="25"></a>&nbsp;//Full resume
-                </p>
-                <div class="align_right">
-                    <span>(</span>
-                    <a href="./index.html#top">Top of the page</a>
-                    <span>)</span>
+            
+            <hr>
+            
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-2">
+                    <!-- PROJECTS -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2><a class="section" name="projects">PROJECTS</a></h2>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <!-- Les Migeons -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Les Migeons</h3>
+                            <p class="text-center">Unity | Genetic Algorithm | Sandbox</p>
+                            <a href="#lesmigeons" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="lesmigeons">
+                                <img src="img/projects/les-migeons.png" alt="Les Migeons">
+                            </a>
+                            <div class="collapse" id="lesmigeons">
+                                <div class="well">
+                                    <p><a href="http://simonchauvin.itch.io/les-migeons" target="_blank">Play</a>.</p>
+                                    <p>
+                                        The Migeons are a kind of clueless creatures that need help to get better at building things.
+                                    </p>
+                                    <p>
+                                        The game uses a genetic algorithm that is supposed to be autonomous and iterate a great number of time to allow for a quick evolution process through reproduction and mutation. Here, we gave the selection process to the player so that she could choose which Migeon should pass its genes on. The genes in Les Migeons are simply build orders.
+                                    </p>
+                                    <p>Made with <a href="http://www.guillaumelevieux.com/" target="_blank">Guillaume</a> and <a href="http://smader.interaction-project.net/" target="_blank">Stéphanie</a> for the Global Game Jam 2015.</p>
+                                    <p>Appeared on <a href="http://www.youtube.com/watch?v=fs4Kin6jTIs" target="_blank">Indie Impressions</a>, <a href="http://wip.warpdoor.com/2015/01/26/les-migeons-simon-chauvin-guillame-levieux-stephanie-mader/" target="_blank">Warp Door</a>, <a href="http://oujevipo.fr/general/4097-les-migeons/" target="_blank">L'Oujevipo</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- The Rose Processor -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">The Rose Processor</h3>
+                            <p class="text-center">Unity | Abstract | Multitasking</p>
+                            <a href="#theroseprocessor" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="theroseprocessor">
+                                <img src="img/projects/the-rose-processor.png" alt="The Rose Processor">
+                            </a>
+                            <div class="collapse" id="theroseprocessor">
+                                <div class="well">
+                                    <p><a href="http://simonchauvin.itch.io/the-rose-processor" target="_blank">Play</a>.</p>
+                                    <p>
+                                        The Rose Processor is the game I developed during the 31st Ludum Dare.
+                                    </p>
+                                    <p>
+                                        It’s a game where you have to try and reach the final form of the rose, bud after bud and branch after branch.
+                                    </p>
+                                    <p>
+                                        It involves very quick multitasking and high reaction speed. It even allows certain strategies like grouping the red triangles or coupling each red triangle with an empty one.
+                                    </p>
+                                    <p>Appeared on <a href="http://oujevipo.fr/general/3898-the-rose-processor/" target="_blank">L'Oujevipo</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Boulevard Descat -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Boulevard Descat</h3>
+                            <p class="text-center">Arduino | Electronics | Music</p>
+                            <a href="#boulevarddescat" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="boulevarddescat">
+                                <img src="img/projects/boulevard-descat.png" alt="Boulevard Descat">
+                            </a>
+                            <div class="collapse" id="boulevarddescat">
+                                <div class="well">
+                                    <p><a href="http://youtu.be/ybJgbAe6IrQ" target="_blank">Trailer</a>.</p>
+                                    <p>
+                                        Boulevard Descat is hidden somewhere on the street. It's there for people to find. It cannot be moved, it is fixed with cement in a wall somewhere around Tourcoing, near Lille in France.
+                                    </p>
+                                    <p>
+                                        It allows anyone with a 9 volts battery to record a melody if, and only if, that person is capable of playing the previous recorded melody.
+                                    </p>
+                                    <p>
+                                        Made with <a href="http://twitter.com/gaelBourhis" target="_blank">Gaël</a>, <a href="http://twitter.com/AGavaldaKedavra" target="_blank">Romain</a>, <a href="http://metalchouchen.com/" target="_blank">Joon</a> and <a href="http://metalchouchen.com/" target="_blank">Damien</a> at the Zoo Machines Festival 2014.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <!-- Orbits -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Orbits</h3>
+                            <p class="text-center">Unity | Mobile | Gravity</p>
+                            <a href="#orbits" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="orbits">
+                                <img src="img/projects/orbits.png" alt="Orbits">
+                            </a>
+                            <div class="collapse" id="orbits">
+                                <div class="well">
+                                    <p><a href="http://www.simonchauvin.com/orbits-the-game" target="_blank">Website</a>.</p>
+                                    <p>
+                                        The game is pretty straightforward, the player leads a little ship towards space junks that need to be collected.
+                                        To do so, she can modify the mass of the system’s planets and thus completely change the overall gravity that affects the ship.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mapping the Iceberg -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Mapping the Iceberg</h3>
+                            <p class="text-center">Unity | openFrameworks | Processing</p>
+                            <a href="#mappingtheiceberg" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="mappingtheiceberg">
+                                <img src="img/projects/mapping-the-iceberg.png" alt="Mapping the Iceberg">
+                            </a>
+                            <div class="collapse" id="mappingtheiceberg">
+                                <div class="well">
+                                    <p><a href="http://www.marie-muller.com/pages%20english/e_mappingtheiceberg.html" target="_blank">Website</a>.</p>
+                                    <p>
+                                        Mapping the Iceberg is an art installation designed by Developed for <a href="http://www.marie-muller.com" target="_blank">Marie Muller</a> during her residency at Locus Sonus. My main role was to assist Marie by building the various elements needed for the installation to work:
+                                    </p>
+                                    <ul>
+                                        <li>A <a href="http://github.com/simonchauvin/IR-Led-Video-Tracking" target="_blank">system</a> for tracking the position of a person moving in a room.</li>
+                                        <li>A <a href="http://github.com/simonchauvin/AndroidSensorDataThroughUDP" target="_blank">program</a> for tracking that person’s head movements.</li>
+                                        <li>A <a href="http://github.com/simonchauvin/Mapping-The-Iceberg" target="_blank">3D virtual scene</a> with day/night cycle and sound obstacles.</li>
+                                        <li>A <a href="http://github.com/simonchauvin/Mapping-The-Iceberg" target="_blank">virtual character</a> in sync with the data received from the tracking systems.</li>
+                                    </ul>
+                                    <p>
+                                        A person is equipped with headphones, an android phone and an IR Led and is free to move in an empty room filled with sounds (from the virtual map). The IR Led is used to track the position of the person in the room and map her position in a virtual map where the sounds are. The virtual map is built with Unity and features night and day cycle as well as detection of obstacles between the listener and the audio sources. A Processing app was developed and installed on the Android phone to map the orientation of the listener’s head and send the information back to the virtual map. Finally, the tracking was made possible thanks to an OpenFrameworks application that retrieves the image sent by the camera, finds the light emitted by the IR Led and send the information back to the virtual map.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Louis -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Louis</h3>
+                            <p class="text-center">Unity | AI | 2D&3D</p>
+                            <a href="#louis" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="louis">
+                                <img src="img/projects/louis.png" alt="Louis">
+                            </a>
+                            <div class="collapse" id="louis">
+                                <div class="well">
+                                    <p><a href="http://globalgamejam.org/2014/games/louis" target="_blank">Play</a>.</p>
+                                    <p>
+                                        Louis is a pretty weird game about exploring a peculiar character’s inner mechanisms. Louis is feeling pretty bad and we don’t know why but we can show him around. It’ll make him feel better until he just can’t take it anymore…
+                                    </p>
+                                    <p>Made with <a href="http://www.guillaumelevieux.com/" target="_blank">Guillaume</a> and <a href="http://smader.interaction-project.net/" target="_blank">Stéphanie</a> for the Global Game Jam 2014.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <!-- {FM.js(engine);} -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">{FM.js(engine);}</h3>
+                            <p class="text-center">2D Game Engine | JavaScript | HTML5</p>
+                            <a href="#fmjsengine" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="fmjsengine">
+                                <img src="img/projects/fm-js-engine.png" alt="{FM.js(engine);}">
+                            </a>
+                            <div class="collapse" id="fmjsengine">
+                                <div class="well">
+                                    <p><a href="http://simonchauvin.github.io/FM.js-Engine/" target="_blank">Website</a>.</p>
+                                    <p>
+                                        My own personal JavaScript 2D game engine.
+                                    </p>
+                                    <p>
+                                        it is based on the HTML5 Canvas API and it runs on any browser supporting Canvas.
+                                    </p>
+                                    <p>
+                                        It comes with all the basics for game development like state management, animated sprites, camera and input handling, tiled maps, basic physics and collisions management, a particle system and a basic pathfinding component.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Work Me -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Work Me</h3>
+                            <p class="text-center">Unity | Natural Language Processing | L-system</p>
+                            <a href="#workme" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="workme">
+                                <img src="img/projects/work-me.png" alt="Work Me">
+                            </a>
+                            <div class="collapse" id="workme">
+                                <div class="well">
+                                    <p><a href="#" target="_blank">Play</a>.</p>
+                                    <p>
+                                        Work Me is a game where the player writes to a plant to make it grow in certain ways. Some words and sentences make the plant grow higher and thiner or simply larger for example. The player has to discover the different ways she can grow the plant and use it to built her own unique plant.
+                                    </p>
+                                    <p>
+                                        For the optimal experience make sure you have a Windows PC and 3D stereoscopic glasses as well as the matching screen and computer.
+                                    </p>
+                                    <p>Made with <a href="http://www.marie-muller.com" target="_blank">Marie</a> for the Retro (No) Future Games Festival 2013.</p>
+                                    <p>Appeared on <a href="http://oujevipo.fr/10-minutes/975-work-me/" target="_blank">L'Oujevipo</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Down the Line -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Down the Line</h3>
+                            <p class="text-center">FM.js(engine) | Abstract | Puzzle</p>
+                            <a href="#downtheline" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="downtheline">
+                                <img src="img/projects/down-the-line.png" alt="Down the Line">
+                            </a>
+                            <div class="collapse" id="downtheline">
+                                <div class="well">
+                                    <p><a href="http://simonchauvin.itch.io/down-the-line" target="_blank">Play</a>.</p>
+                                    <p>
+                                        Down The Line is the game I made for the 26th Ludum Dare on Minimalism. It gathered enough positive votes to be in the top 100 games of the competition!
+                                    </p>
+                                    <p>
+                                        Down The Line empowers the player to bring entities to the sun by creating paths that entities take and follow. The idea was to push the player to carefully put down waypoints to optimize trajectories. This is how I interpreted the Minimalism theme based on the concept of optimization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <!-- Overflowed -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Overflowed</h3>
+                            <p class="text-center">Flixel | Two Player | Tactical</p>
+                            <a href="#overflowed" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="overflowed">
+                                <img src="img/projects/overflowed.png" alt="Overflowed">
+                            </a>
+                            <div class="collapse" id="overflowed">
+                                <div class="well">
+                                    <p><a href="http://simonchauvin.itch.io/overflowed" target="_blank">Play</a>.</p>
+                                    <p>
+                                        Overflowed is a two player tactical game originally developed with the Flixel framework.
+                                    </p>
+                                    <p>
+                                        Two players face each other, armed with a continuous flow of minions they must bring down the opponent base. Overflowed features neat tactics and quick thinking in a fast paced gameplay.
+                                    </p>
+                                    <p>
+                                        It’s a game Guillaume and I have been developing together for a long time. We have ported it on many platforms because we thought it didn’t fit the web paradigm very well since it’s a 2 player game. Anyway, after a few failed attempts on tablets we have decided that it was time to stop and move on.
+                                    </p>
+                                    <p>Made with <a href="http://twitter.com/GuillaumeGMazas" target="_blank">Guillaume</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- The Core of Life -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">The Core of Life</h3>
+                            <p class="text-center">FM.js(engine) | Ecosystem | Sandbox</p>
+                            <a href="#thecoreoflife" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="thecoreoflife">
+                                <img src="img/projects/the-core-of-life.png" alt="The Core of Life">
+                            </a>
+                            <div class="collapse" id="thecoreoflife">
+                                <div class="well">
+                                    <p><a href="http://simonchauvin.itch.io/the-core-of-life" target="_blank">Play</a>.</p>
+                                    <p>
+                                        The Core of Life is an abstract ecosystem that the player have to understand and alter in order to make the universe shrinking slower.
+                                    </p>
+                                    <p>Made with <a href="http://www.marie-muller.com" target="_blank">Marie</a> for the Global Game Jam 2012.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- NewsLeaks -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">NewsLeaks</h3>
+                            <p class="text-center">Flash/Flixel | MMOG | RSS</p>
+                            <a href="#newsleaks" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="newsleaks">
+                                <img src="img/projects/newsleaks.png" alt="NewsLeaks">
+                            </a>
+                            <div class="collapse" id="newsleaks">
+                                <div class="well">
+                                    <p><a href="http://youtu.be/iz1A9xCzxPM" target="_blank">Trailer</a>.</p>
+                                    <p>
+                                        NewsLeaks is a massively multi-player Facebook game on which I worked very hard for a couple of months, sadly we had to stop the development for many good reasons, like internship for instance.
+                                    </p>
+                                    <p>
+                                        NewsLeaks makes you play a chief editor and manage actual news from actual sources. It was supposed to allow coopetitive multiplayer gameplay through the selection of news by multiple players inside a journal. The news selected were supposed to create new subjective realities just like actual journals create, a news that no one is talking about is as good as inexistent.
+                                    </p>
+                                    <p>Student project made with <a href="http://twitter.com/AGavaldaKedavra" target="_blank">Romain</a>, <a href="http://www.marie-muller.com" target="_blank">Marie</a>, <a href="http://simonrolland.carbonmade.com/" target="_blank">Simon</a>, <a href="http://munkka.carbonmade.com/" target="_blank">Mathilde</a> and <a href="http://twitter.com/sylvain_p_" target="_blank">Sylvain</a> for the Hits Playtime contest 2011.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <!-- Stream -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Stream</h3>
+                            <p class="text-center">Unity | ENJMIN | Time</p>
+                            <a href="#stream" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="stream">
+                                <img src="img/projects/stream.png" alt="Stream">
+                            </a>
+                            <div class="collapse" id="stream">
+                                <div class="well">
+                                    <p><a href="http://www.simonchauvin.com/stream-the-game" target="_blank">Website</a>.</p>
+                                    <p>
+                                        Stream is based on flow manipulation, You can forward, rewind, play or pause the action. While those core controls shift platforms around you, it allows to move across each level of Stream. The more the player advances through the game, the darker and harder it becomes.
+                                    </p>
+                                    <p>
+                                        Stream has been awarded the e-Magiciens/SACD price during the e-Magiciens Festival 2011.
+                                        You can also find a <a href="http://sortiv.com/?p=1515" target="_blank">review</a> of the game and an <a href="http://sortiv.com/?p=1606" target="_blank">interview</a> of the team, made by Jordan Rivas.
+                                    </p>
+                                    <p>Student project made at <a href="http://enjmin.fr/" target="_blank">ENJMIN</a> with <a href="" target="_blank">Rémi Chapelain</a>, Jean-François Ducreux, Kévin Faure, Pierre-Antoine Favre, Colin Galletto and Franck Langlet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Wave Me -->
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Wave Me</h3>
+                            <p class="text-center">XNA | ENJMIN | Soundwave</p>
+                            <a href="#waveme" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="waveme">
+                                <img src="img/projects/waveme.png" alt="Wave Me">
+                            </a>
+                            <div class="collapse" id="waveme">
+                                <div class="well">
+                                    <p><a href="http://www.simonchauvin.com/waveme-the-game" target="_blank">Website</a>.</p>
+                                    <p>
+                                        Wave Me is an action video game allowing you to play as a sound wave across different levels. In order to get through the game you need to use some of the sound wave properties which are rebounds and wavelength. Each bounce allows you to modify your trajectory but reduces the life of the sound wave. The gameplay is optimization-based in the way that the more you play the less you waste life on rebounds. A novice will get an intense action game while the experienced one will enjoy a more peaceful experience.
+                                    </p>
+                                    <p>Student project made at <a href="http://enjmin.fr/" target="_blank">ENJMIN</a> with Alban Chagnoleau, Germain Mazac, Benjamin Michenaud and <a href="http://simonrolland.carbonmade.com/" target="_blank">Simon Rolland</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <!-- ABOUT -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2><a class="section" name="about">ABOUT</a></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <h3>Game Designer and Programmer</h3>
+                            <p>
+                                I create video games as a game designer and programmer, often alone but also with some <a href="http://www.marie-muller.com/">very</a> <a href="http://guillaumelevieux.com/">talented</a> <a href="http://smader.interaction-project.net/">individuals</a>. And I’m also part of <a href="http://www.lechantducygne.com">Le Chant du Cygne</a> game collective. I particularly enjoy games with a strong focus on simple mechanics, proceduralism and/or expressiveness.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h3>Lecturer</h3>
+                            <p>
+                                Since 2011 I have taught computer science, game programming and game design at the University Paris XIII, University Paris Sud, CNAM and ICAN.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <!-- FOOTER -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <p><a href="mailto:contact@simonchauvin.com">E-mail</a> | <a href="http://www.twitter.com/SimonChauvin">Twitter</a> | <a href="http://www.github.com/simonchauvin">GitHub</a> | <a href="http://simonchauvin.itch.io/">itch.io</a> | <a href="http://www.linkedin.com/in/chauvinsimon">LinkedIn</a></p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 text-right">
+                            <p>&copy; Simon Chauvin 2015</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="contacts" class="section">
-                <h2 class="title">/** <span class="red">C</span>ontacts **/</h2>
-                <a id="contacts" name="contacts"></a>
-                <p>
-                    <a href="mailto:chauvin.simon@gmail.com"><img src="img/gmail.png" alt="email" width="50"></a>&nbsp;//email
-                </p>
-                <p>
-                    <a href="http://fr.linkedin.com/in/chauvinsimon"><img src="img/linkedin.png" alt="Linkedin profile" width="50"></a>&nbsp;//Linkedin
-                </p>
-                <p>
-                    <a href="https://twitter.com/SimonChauvin"><img src="img/twitter.png" alt="Twitter profile" width="50"></a>&nbsp;//Twitter
-                </p>
-                <p>
-                    <a href="https://github.com/simonchauvin"><img src="img/github.png" alt="Github repos" width="50"></a>&nbsp;//GitHub
-                </p>
-                <div class="align_right">
-                    <span>(</span>
-                    <a href="./index.html#top">Top of the page</a>
-                    <span>)</span>
-                </div>
-            </div>
-            <div id="menu" class="section">
-                <hr>
-                <span>(</span>
-                <a href="./index.html#projects">Projects</a>
-                <span>||</span>
-                <a href="./index.html#about">About</a>
-                <span>||</span>
-                <a href="./index.html#contacts">Contacts</a>
-                <span>)</span>
-            </div>
-            <div id="footer" class="section">
-                <p>{Copyright (c) (Simon Chauvin;)}</p>
-            </div>
-        </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
+        </div> <!-- /container -->
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
     </body>
 </html>
