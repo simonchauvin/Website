@@ -30,15 +30,15 @@
 
 /* Header */
 
-.nav > li > a {
+nav > ul > li > a {
     font-family: "bebasregular";
     font-style: normal;
     text-decoration: none;
     color: #DAEAEF;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
     font-style: normal;
     text-decoration: underline;
     background-color: transparent;
