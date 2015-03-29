@@ -2,30 +2,7 @@
    Author's custom styles
    ========================================================================== */
 
-.thumbnail {
-    padding: 0px;
-    border: 2px solid #DAEAEF;
-    border-radius: 0px;
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-}
-
-a.thumbnail:focus {
-    border: 2px solid #DAEAEF;
-}
-
-a.thumbnail:hover,
-a.thumbnail:active {
-    border: 2px solid #FF3D2E;
-}
-
-body {
-    font-family: "open_sansregular";
-    color: #fff;
-    background-color: #272F32;
-}
-
+/* Fonts */
 @font-face {
     font-family: 'open_sansregular';
     src: url('../fonts/OpenSans-Regular-webfont.eot');
@@ -50,14 +27,6 @@ body {
     font-style: normal;
 }
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #DAEAEF;
-  font-style: italic;
-}
-
 
 /* Header */
 
@@ -77,6 +46,10 @@ a:hover {
 
 .title {
     font-family: "bebasregular";
+    font-size: xx-large;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
 }
 
 .title a,
@@ -86,6 +59,48 @@ a:hover {
     text-decoration: none;
     color: #FF3D2E;
 }
+
+
+/* Body */
+
+body {
+    font-family: "open_sansregular";
+    color: #fff;
+    background-color: #272F32;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* Thumbnails */
+
+.thumbnail {
+    padding: 0px;
+    border: 2px solid #DAEAEF;
+    border-radius: 0px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+a.thumbnail:focus {
+    border: 2px solid #DAEAEF;
+}
+
+a.thumbnail:hover,
+a.thumbnail:active {
+    border: 2px solid #FF3D2E;
+}
+
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #DAEAEF;
+  font-style: italic;
+}
+
 
 /* Sections */
 
@@ -98,7 +113,8 @@ a:hover {
     color: #DAEAEF;
 }
 
-/* Well Collapsed */
+
+/* Texts */
 
 .well {
     color: #272F32;
