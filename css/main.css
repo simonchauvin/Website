@@ -40,6 +40,7 @@ nav > ul > li > a {
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
     font-style: normal;
+    color: #DAEAEF;
     text-decoration: underline;
     background-color: transparent;
 }
@@ -89,7 +90,7 @@ a.thumbnail:focus {
 
 a.thumbnail:hover,
 a.thumbnail:active {
-    border: 2px solid #FF3D2E;
+    border: 2px solid #E23F33;
 }
 
 
@@ -97,8 +98,7 @@ a.thumbnail:active {
 a,
 a:focus,
 a:hover {
-  color: #DAEAEF;
-  font-style: italic;
+  color: #E23F33;
 }
 
 
@@ -116,6 +116,16 @@ a:hover {
 
 /* Texts */
 
+.text-muted {
+    color: #CCC;
+}
+
+.local-link,
+.local-link:hover,
+.local-link:focus {
+    color: #DAEAEF;
+}
+
 .well {
     color: #272F32;
     background-color: #FFF;
@@ -124,5 +134,5 @@ a:hover {
 }
 
 .well a {
-    color: #FF3D2E;
+    color: #E23F33;
 }
