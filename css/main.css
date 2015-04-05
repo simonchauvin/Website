@@ -34,13 +34,14 @@ nav > ul > li > a {
     font-family: "bebasregular";
     font-style: normal;
     text-decoration: none;
-    color: #DAEAEF;
+    /*color: #DAEAEF;*/
+    color: #DDD;
 }
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
     font-style: normal;
-    color: #DAEAEF;
+    color: #DDD;
     text-decoration: underline;
     background-color: transparent;
 }
@@ -67,7 +68,8 @@ nav > ul > li > a:focus {
 body {
     font-family: "open_sansregular";
     color: #fff;
-    background-color: #272F32;
+    /*background-color: #272F32;*/
+    background-color: #222;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -77,7 +79,7 @@ body {
 
 .thumbnail {
     padding: 0px;
-    border: 2px solid #DAEAEF;
+    border: 2px solid #DDD;
     border-radius: 0px;
     -webkit-transition: none;
     -o-transition: none;
@@ -85,7 +87,7 @@ body {
 }
 
 a.thumbnail:focus {
-    border: 2px solid #DAEAEF;
+    border: 2px solid #DDD;
 }
 
 a.thumbnail:hover,
@@ -110,7 +112,7 @@ a:hover {
     font-family: "bebasregular";
     font-style: normal;
     text-decoration: none;
-    color: #DAEAEF;
+    color: #DDD;
 }
 
 
@@ -123,7 +125,7 @@ a:hover {
 .local-link,
 .local-link:hover,
 .local-link:focus {
-    color: #DAEAEF;
+    color: #DDD;
 }
 
 .well {
