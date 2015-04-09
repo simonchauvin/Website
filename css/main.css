@@ -79,20 +79,25 @@ body {
 
 .thumbnail {
     padding: 0px;
-    border: 2px solid #DDD;
+    border: 2px solid #444;
     border-radius: 0px;
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
+    -moz-box-shadow: 0px 0px 4px 2px #444;
+    -webkit-box-shadow: 0px 0px 4px 2px #444;
+    box-shadow: 0px 0px 4px 2px #444;
 }
 
 a.thumbnail:focus {
-    border: 2px solid #DDD;
+    border: 2px solid #444;
 }
 
 a.thumbnail:hover,
 a.thumbnail:active {
-    border: 2px solid #E23F33;
+    border: 2px solid #444;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
 }
 
 
