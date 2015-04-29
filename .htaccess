@@ -1,0 +1,18 @@
+SetEnv PHP_VER 5_4
+SetEnv REGISTER_GLOBALS 0
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Custom error messages/pages                                        |
+# ----------------------------------------------------------------------
+
+# Customize what Apache returns to the client in case of an error.
+# https://httpd.apache.org/docs/current/mod/core.html#errordocument
+
+ErrorDocument 404 /404.html
