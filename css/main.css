@@ -48,10 +48,9 @@ nav > ul > li > a:focus {
 
 .title {
     font-family: "bebasregular";
-    font-size: xx-large;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 40px;
+    line-height: 60px;
 }
 
 .title a,
