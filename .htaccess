@@ -8,3 +8,4 @@
 ErrorDocument 404 http://www.simonchauvin.com/404.html
 
 Redirect 301 /orbits /apsides
+Redirect 301 /projects/orbits /apsides
