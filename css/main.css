@@ -21,7 +21,7 @@
 nav > ul > li > a {
     font-style: normal;
     text-decoration: none;
-    color: #ddd;
+    color: inherit;
 }
 
 nav > ul > li > a:hover,
@@ -41,7 +41,7 @@ nav > ul > li > a:focus {
 .title a {
     font-style: normal;
     text-decoration: none;
-    color: #fff;
+    color: inherit;
 }
 
 .title a:hover,
@@ -135,8 +135,8 @@ nav > ul > li > a:focus {
 
 body {
     font-family: "open_sansregular";
-    color: #fff;
-    background-color: grey;
+    color: #555;
+    background-color: #fdfdfe;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -169,7 +169,6 @@ a.thumbnail:active {
 .section:hover {
     font-style: normal;
     text-decoration: none;
-    color: #ddd;
 }
 
 .project {
