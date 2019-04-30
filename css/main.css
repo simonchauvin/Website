@@ -18,14 +18,14 @@
 
 /* Header */
 
-nav > ul > li > a {
+.menu a {
     font-style: normal;
     text-decoration: none;
     color: inherit;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
+.menu a:hover,
+.menu a:focus {
     font-style: normal;
     color: #000;
     text-decoration: none;
