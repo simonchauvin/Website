@@ -191,6 +191,17 @@ a.thumbnail:active {
     display: none;
 }
 
+.project-other {
+    margin-bottom: 8px;
+}
+
+.project-other .project-title{
+    font-size: 1rem;
+}
+
+.project-other .project-subtitle{
+    font-size: 0.8rem;
+}
 
 /* Texts */
 
