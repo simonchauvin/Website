@@ -15,407 +15,828 @@
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="css/main.css">
     </head>
+    
     <body>
         <a name="home"></a>
         
-        <div class="container">
-            <!-- HEADER -->
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="text-left-lg text-left-md text-left-sm text-center-xs">
-                        <h2 class="title"><a href="http://www.simonchauvin.com">Simon&nbsp;Chauvin</a></h2>
-                    </div>
+        <!-- HEADER -->
+        <div id="header" class="container">
+            <div class="row text-center">
+                
+                <div class="title col-12">
+                    <h3>Simon&nbsp;Chauvin</h3>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="text-right-lg text-right-md text-right-sm text-center-xs">
-                        <p>[ <a href="mailto:contact@simonchauvin.com"><img src="img/email.svg" width="25" alt="email"></a> ] / [ <a href="http://www.twitter.com/SimonChauvin"><img src="img/twitter.png" width="25" alt="twitter"></a> ] <a href="http://www.github.com/simonchauvin"><img src="img/github.png" width="25" alt="github"></a> | <a href="http://simonchauvin.itch.io/"><img src="img/itchio.svg" width="25" alt="itch.io"></a> | <a href="http://www.linkedin.com/in/chauvinsimon"><img src="img/linkedin.png" width="25" alt="linkedin"></a></p>
-                    </div>
+                <div class="header-icons col-12">
+                    <a href="mailto:contact@simonchauvin.com"><img src="img/email.svg" width="20" alt="email"></a> | <a href="http://www.twitter.com/SimonChauvin"><img src="img/twitter.png" width="20" alt="twitter"></a> | <a href="http://www.github.com/simonchauvin"><img src="img/github.png" width="20" alt="github"></a> | <a href="http://simonchauvin.itch.io/"><img src="img/itchio.svg" width="20" alt="itch.io"></a> | <a href="http://www.linkedin.com/in/chauvinsimon"><img src="img/linkedin.png" width="20" alt="linkedin"></a>
                 </div>
+                
             </div>
+        </div> <!-- /HEADER -->
+        
+        <!-- PROJECTS -->
+        <div id="projects" class="container">
+            
             <div class="row">
-                <div class="menu col-lg-12 col-md-12 col-sm-12 text-left-lg text-left-md text-left-sm text-center-xs">
-                    <p>
-                        <a href="#projects">[ Projects ] </a>
-                        /
-                        <a href="#about">[ Others ]</a>
-                        /
-                        <a href="#about">[ About ]</a>
-                    </p>
+                <div id="sub-section-in-progress" class="sub-section sub-section-left col-12">
+                    <a name="sub-section-in-progress">
+                        <h4 class="sub-section-title text-left">In progress</h4>
+                    </a>
                 </div>
             </div>
             
-            <h3 class="text-right-lg text-right-md text-right-sm text-center-xs">[ Projects ]</h3>
-            <hr>
-
-            <!-- PROJECTS -->
-            <div class="projects">
-                <a class="section" name="projects"></a>
-
-                <div class="row">
-
-                    <!-- Havre -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">Havre</h4>
-                        <h6 class="project-subtitle text-right">Cylindrical world | Exploration | Climate simulation</h6>
-                        <a class="thumbnail btn" href="http://www.havre-game.com" target="_blank">
-                            <img src="img/projects/havre.png" class="img-fluid" alt="Havre">
-                        </a>
+            <div class="row project-in-progress no-gutters justify-content-center">
+                
+                <!-- Havre -->
+                <div class="project-thumbnail col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <h4 class="project-thumbnail-title text-center">Havre</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-havre"><img src="img/projects/havre_thumbnail.png" class="img-fluid" alt="Havre"></a>
                     </div>
+                </div>
+                <div id="project-havre" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Havre</h3>
+                            <h6 class="text-center"><em>Cylindrical world</em> | <em>Exploration</em> | <em>Climate simulation</em></h6>
 
-                    <!-- The Landscape Processor -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">The Landscape Processor</h4>
-                        <h6 class="project-subtitle text-right">Ludum Dare 32 | Sandbox | NotGames Fest 2015</h6>
-                        <a class="thumbnail btn" href="http://simonchauvin.itch.io/the-landscape-processor" target="_blank">
-                            <img src="img/projects/the-landscape-processor.png" class="img-fluid" alt="The Landscape Processor">
-                        </a>
-                    </div>
-
-                    <!-- Palimpseste -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">Palimpseste</h4>
-                        <h6 class="project-subtitle text-right">Alternative Controller | First Person | Exploration</h6>
-                        <a class="thumbnail btn" href="http://www.lechantducygne.com/palimpseste" target="_blank">
-                            <img src="img/projects/palimpseste.png" class="img-fluid" alt="Palimpseste">
-                        </a>
-                    </div>
-
-                    <!-- APSIDES -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">APSIDES</h4>
-                        <h6 class="project-subtitle text-right">Minimalist | Mobile | Gravity simulation</h6>
-                        <a class="thumbnail btn" href="http://simonchauvin.com/apsides" target="_blank">
-                            <img src="img/projects/apsides.png" class="img-fluid" alt="APSIDES">
-                        </a>
-                    </div>
-
-                    <!-- Les Migeons -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">Les Migeons</h4>
-                        <h6 class="project-subtitle text-right">Sandbox | Global Game Jam 2015 | Genetic Algorithm</h6>
-                        <a class="thumbnail btn" href="http://lesmigeons.itch.io/les-migeons" target="_blank">
-                            <img src="img/projects/les-migeons.png" class="img-fluid" alt="Les Migeons">
-                        </a>
-                    </div>
-
-                    <!-- The Rose Processor -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">The Rose Processor</h4>
-                        <h6 class="project-subtitle text-right">Multitasking | Ludum Dare 31 | Abstract</h6>
-                        <a class="thumbnail btn" href="http://simonchauvin.itch.io/the-rose-processor" target="_blank">
-                            <img src="img/projects/the-rose-processor.png" class="img-fluid" alt="The Rose Processor">
-                        </a>
-                    </div>
-
-                    <!-- Down the Line -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">Down the Line</h4>
-                        <h6 class="project-subtitle text-right">Abstract | Ludum Dare 26 | Puzzle</h6>
-                        <a class="thumbnail btn" href="http://simonchauvin.itch.io/down-the-line" target="_blank">
-                            <img src="img/projects/down-the-line.png" class="img-fluid" alt="Down the Line">
-                        </a>
-                    </div>
-
-                    <!-- Boulevard Descat -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">Boulevard Descat</h4>
-                        <h6 class="project-subtitle text-right">Arduino | Zoo Machines 2014 | Electronics</h6>
-                        <a href="#boulevarddescat" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="boulevarddescat">
-                            <img src="img/projects/boulevard-descat.png" class="img-fluid" alt="Boulevard Descat">
-                        </a>
-                        <div class="collapse" id="boulevarddescat">
-                            <div class="well text-justify">
-                                <p><a href="http://youtu.be/ybJgbAe6IrQ" target="_blank">Trailer</a>.</p>
-                                <p>
-                                    Boulevard Descat is hidden somewhere on the street. It's there for people to find. It cannot be moved, it is fixed with cement in a wall somewhere around Tourcoing, near Lille in France.
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    A first person exploration game set inside a dynamic cylindrical world.
+                                    Explore a different kind of gravity and trigger large scale climatic phenomena to bring Havre back to life.
                                 </p>
-                                <p>
-                                    It allows anyone with a 9 volts battery to record a melody if, and only if, that person is capable of playing the previous recorded melody.
-                                </p>
-                                <p>
-                                    Made with <a href="http://www.gaelbourhis.com/" target="_blank">Gaël</a>, <a href="https://annagavaldakedavra.itch.io/" target="_blank">Romain</a>, <a href="http://joon.be/" target="_blank">Joon</a> and <a href="http://metalchouchen.com/" target="_blank">Damien</a>.
-                                </p>
+
+                                <p class="text-left">Made with <a class="external-link" href="http://www.lechantducygne.com" target="_blank">Le Chant du cygne</a>.</p>
+
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://www.havre-game.com" target="_blank">Website</a>.</p>
+                            </div>
+
+                            <div class="back-to-projects"><a class="local-link" href="#">Back</a>.</div>
+                        </div>
+
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://player.vimeo.com/video/200470990?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay;"></iframe>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Mapping the Iceberg -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">Mapping the Iceberg</h4>
-                        <h6 class="project-subtitle text-right">Unity | openFrameworks | Processing</h6>
-                        <a href="#mappingtheiceberg" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="mappingtheiceberg">
-                            <img src="img/projects/mapping-the-iceberg.png" class="img-fluid" alt="Mapping the Iceberg">
-                        </a>
-                        <div class="collapse" id="mappingtheiceberg">
-                            <div class="well text-justify">
-                                <p><a href="http://www.marie-muller.com/pages%20english/e_mappingtheiceberg.html" target="_blank">Website</a>.</p>
-                                <p>
-                                    Mapping the Iceberg is an art installation designed by <a href="http://www.marie-muller.com" target="_blank">Marie Muller</a> during her residency at Locus Sonus.
+                <!-- Eclaircies -->
+                <div class="project-thumbnail col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <h4 class="project-thumbnail-title text-center">Eclaircies</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-eclaircies"><img src="img/projects/eclaircies_thumbnail.jpg" class="img-fluid" alt="Eclaircies"></a>
+                    </div>
+                </div>
+                <div id="project-eclaircies" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Eclaircies</h3>
+                            <h6 class="text-center"><em>Deep forest</em> | <em>Custom controls</em> | <em>Procedural generation</em></h6>
+
+                            <div class="project-desc">                                
+                                <p class="text-justify">
+                                    Move around. Explore the forest. Get out.
+                                </p>
+
+                                <p class="text-left">>&nbsp;<a class="external-link" href="https://simonchauvin.itch.io/eclaircies" target="_blank">Play the jam version</a>.</p>
+                            </div>
+
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/eclaircies.jpg" class="img-fluid" alt="Eclaircies">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- APSIDES -->
+                <div class="project-thumbnail col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <h4 class="project-thumbnail-title text-center">APSIDES</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-apsides"><img src="img/projects/apsides_thumbnail.png" class="img-fluid" alt="APSIDES"></a>
+                    </div>
+                </div>
+                <div id="project-apsides" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                            <h3 class="title text-center">APSIDES</h3>
+                            <h6 class="text-center"><em>Minimalist</em> | <em>Mobile</em> | <em>Gravity simulation</em></h6>
+
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    A slow paced action game about playing with orbital mechanics.
+                                </p>
+
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://simonchauvin.com/apsides" target="_blank">Website</a>.</p>
+                            </div>
+
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://player.vimeo.com/video/110661543?title=0&byline=0&portrait=0" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div id="sub-section-recent" class="sub-section sub-section-right col-12">
+                    <a name="sub-section-recent">
+                        <h4 class="sub-section-title text-right">Selected</h4>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row project-recent no-gutters justify-content-center">
+                
+                <!-- The Landscape Processor -->
+                <div class="project-thumbnail col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                    <h4 class="project-thumbnail-title text-center">The Landscape Processor</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-the-landscape-processor"><img src="img/projects/the-landscape-processor_thumbnail.png" class="img-fluid" alt="The Landscape Processor"></a>
+                    </div>
+                </div>
+                <div id="project-the-landscape-processor" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">The Landscape Processor</h3>
+                            <h6 class="text-center">-&nbsp;2015&nbsp;-</h6>
+                            <h6 class="text-center"><em>Ludum Dare 32</em> | <em>Sandbox</em> | <em>NotGames Fest</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    Build a landscape.
+                                </p>
+
+                                <ul class="text-left">
+                                    <li>Part of the official selection of the <a class="external-link" href="http://notgames.colognegamelab.com/exhibition.html" target="_blank">2015 NotGames Fest</a>.</li>
+                                    <li>Appeared on <a class="external-link" href="http://wip.warpdoor.com/2015/04/26/the-landscape-processor-simon-chauvin/" target="_blank">Warp Door</a>.</li>
+                                </ul>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://simonchauvin.itch.io/the-landscape-processor" target="_blank">Play</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://player.vimeo.com/video/132208428?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+
+                <!-- Palimpseste -->
+                <div class="project-thumbnail col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                    <h4 class="project-thumbnail-title text-center">Palimpseste</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-palimpseste"><img src="img/projects/palimpseste_thumbnail.jpg" class="img-fluid" alt="Palimpseste"></a>
+                    </div>
+                </div>
+                <div id="project-palimpseste" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Palimpseste</h3>
+                            <h6 class="text-center">-&nbsp;2016&nbsp;-</h6>
+                            <h6 class="text-center"><em>Alternative Controller</em> | <em>First Person</em> | <em>Exploration</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    A first person exploration game played with a custom headset that enables players to change the color filter through which they look at the screen.
+                                </p>
+                                
+                                <p class="text-left">Made with <a class="external-link" href="http://www.lechantducygne.com" target="_blank">Le Chant du cygne</a>.</p>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://www.lechantducygne.com/palimpseste" target="_blank">Website</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://player.vimeo.com/video/147940937?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mapping the Iceberg -->
+                <div class="project-thumbnail col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                    <h4 class="project-thumbnail-title text-center">Mapping the Iceberg</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-mapping-the-iceberg"><img src="img/projects/mapping-the-iceberg_thumbnail.png" class="img-fluid" alt="Mapping the Iceberg"></a>
+                    </div>
+                </div>
+                <div id="project-mapping-the-iceberg" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Mapping the Iceberg</h3>
+                            <h6 class="text-center">-&nbsp;2014&nbsp;-</h6>
+                            <h6 class="text-center"><em>Unity</em> | <em>openFrameworks</em> | <em>Processing</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>Mapping the Iceberg</strong> is an art installation designed by <a class="external-link" href="http://www.marie-muller.com" target="_blank">Marie Muller</a> during her residency at Locus Sonus.
                                     My main role was to assist Marie by building the various elements needed for the installation to work:
                                 </p>
-                                <ul>
-                                    <li>A <a href="http://github.com/simonchauvin/IR-Led-Video-Tracking" target="_blank">system</a> for tracking the position of a person moving in a room.</li>
-                                    <li>A <a href="http://github.com/simonchauvin/AndroidSensorDataThroughUDP" target="_blank">program</a> for tracking that person’s head movements.</li>
-                                    <li>A <a href="http://github.com/simonchauvin/Mapping-The-Iceberg" target="_blank">3D virtual scene</a> with day/night cycle and sound obstacles.</li>
-                                    <li>A <a href="http://github.com/simonchauvin/Mapping-The-Iceberg" target="_blank">virtual character</a> in sync with the data received from the tracking systems.</li>
+                                
+                                <ul class="text-left">
+                                    <li>A <a class="external-link" href="http://github.com/simonchauvin/IR-Led-Video-Tracking" target="_blank">system</a> for tracking the position of a person moving in a room.</li>
+                                    <li>A <a class="external-link" href="http://github.com/simonchauvin/AndroidSensorDataThroughUDP" target="_blank">program</a> for tracking that person’s head movements.</li>
+                                    <li>A <a class="external-link" href="http://github.com/simonchauvin/Mapping-The-Iceberg" target="_blank">3D virtual scene</a> with day/night cycle and sound obstacles.</li>
+                                    <li>A <a class="external-link" href="http://github.com/simonchauvin/Mapping-The-Iceberg" target="_blank">virtual character</a> in sync with the data received from the tracking systems.</li>
                                 </ul>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://www.marie-muller.com/pages%20english/e_mappingtheiceberg.html" target="_blank">Website</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://www.youtube-nocookie.com/embed/l4kHne3Yi0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Overflowed -->
-                    <div class="project col-md-6 col-sm-12">
-                        <h4 class="project-title text-center">Overflowed</h4>
-                        <h6 class="project-subtitle text-right">Minions | Two Player | Tactical</h6>
-                        <a href="#overflowed" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="overflowed">
-                            <img src="img/projects/overflowed.png" class="img-fluid" alt="Overflowed">
-                        </a>
-                        <div class="collapse" id="overflowed">
-                            <div class="well text-justify">
-                                <p><a href="http://simonchauvin.itch.io/overflowed" target="_blank">Play</a>.</p>
-                                <p>
-                                    It’s a game Guillaume and I have been developing together for a long time. We have ported it on many platforms because we thought it didn’t fit the web paradigm very well since it’s a 2 player game. Anyway, after a few failed attempts on tablets we have decided that it was time to stop and move on.
+                </div>
+                
+                <!-- Pulpe -->
+                <div class="project-thumbnail col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                    <h4 class="project-thumbnail-title text-center">Pulpe</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-pulpe"><img src="img/projects/pulpe_thumbnail.png" class="img-fluid" alt="Pulpe"></a>
+                    </div>
+                </div>
+                <div id="project-pulpe" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Pulpe</h3>
+                            <h6 class="text-center">-&nbsp;2019&nbsp;-</h6>
+                            <h6 class="text-center"><em>Skin</em> | <em>Digital Art Jam</em> | <em>Mobile</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    A skin stroking simulation.
                                 </p>
-                                <p>Made with <a href="http://twitter.com/GuillaumeGMazas" target="_blank">Guillaume</a>.</p>
+                                <p class="text-left">Made with <a class="external-link" href="http://www.guillaumelevieux.com/" target="_blank">Guillaume</a> and <a class="external-link" href="https://pixelserieux.com/" target="_blank">Thomas</a>.</p>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="https://monsieurcrescen.itch.io/pulpe" target="_blank">Play</a>.</p>
                             </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/pulpe.jpeg" class="img-fluid" alt="Pulpe">
                         </div>
                     </div>
-
                 </div>
 
+                <!-- Les Migeons -->
+                <div class="project-thumbnail col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                    <h4 class="project-thumbnail-title text-center">Les Migeons</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-les-migeons"><img src="img/projects/les-migeons_thumbnail.png" class="img-fluid" alt="Les Migeons"></a>
+                    </div>
+                </div>
+                <div id="project-les-migeons" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Les Migeons</h3>
+                            <h6 class="text-center">-&nbsp;2015&nbsp;-</h6>
+                            <h6 class="text-center"><em>Sandbox</em> | <em>Global Game Jam</em> | <em>Genetic Algorithm</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    This game uses a genetic algorithm that is supposed to be autonomous and iterate a great number of time to allow for a quick evolution process through reproduction and mutation. Here, we gave the selection process to the player so that she could choose which Migeon should pass its genes on. The genes here are simply build orders.
+                                </p>
+                                <p class="text-left">Made with <a class="external-link" href="http://www.guillaumelevieux.com/" target="_blank">Guillaume</a> and <a class="external-link" href="http://smader.interaction-project.net/" target="_blank">Stéphanie</a>.</p>
+                                <p class="text-left">Appeared on <a class="external-link" href="http://www.youtube.com/watch?v=fs4Kin6jTIs" target="_blank">Indie Impressions</a>, <a class="external-link" href="http://wip.warpdoor.com/2015/01/26/les-migeons-simon-chauvin-guillame-levieux-stephanie-mader/" target="_blank">Warp Door</a>, <a class="external-link" href="http://oujevipo.fr/general/4097-les-migeons/" target="_blank">L'Oujevipo</a>.</p>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://lesmigeons.itch.io/les-migeons" target="_blank">Play</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://player.vimeo.com/video/132206445?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <h3 class="text-left-lg text-left-md text-left-sm text-center-xs">[ Others ]</h3>
-            <hr>
+            <div class="row">
+                <div id="sub-section-earlier" class="sub-section sub-section-left col-12">
+                    <a name="sub-section-earlier">
+                        <h4 class="sub-section-title text-left">More</h4>
+                    </a>
+                </div>
+            </div>
             
-            <!-- OTHERS -->
-            <div class="others">
-                <a class="section" name="others"></a>
+            <div class="row project-earlier no-gutters justify-content-center">
                 
-                <div class="row">
-                    <!-- The Core of Life -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">The Core of Life</h4>
-                        <h6 class="project-subtitle text-right">Sandbox | Global Game Jam 2012 | Ecosystem</h6>
-                        <a href="#thecoreoflife" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="thecoreoflife">
-                            <img src="img/projects/the-core-of-life.png" class="img-fluid" alt="The Core of Life">
-                        </a>
-                        <div class="collapse" id="thecoreoflife">
-                            <div class="well text-justify">
-                                <p><a href="http://simonchauvin.itch.io/the-core-of-life" target="_blank">Play</a>.</p>
-                                <p>
-                                    The Core of Life is an abstract ecosystem that the player have to understand and alter in order to make the universe shrinking slower.
+                <!-- The Rose Processor -->
+                <div class="project-thumbnail col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                    <h4 class="project-thumbnail-title text-center">The Rose Processor</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-the-rose-processor"><img src="img/projects/the-rose-processor_thumbnail.png" class="img-fluid" alt="The Rose Processor"></a>
+                    </div>
+                </div>
+                <div id="project-the-rose-processor" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">The Rose Processor</h3>
+                            <h6 class="text-center">-&nbsp;2014&nbsp;-</h6>
+                            <h6 class="text-center"><em>Multitasking</em> | <em>Ludum Dare 31</em> | <em>Abstract</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>The Rose Processor</strong> involves very quick multitasking and high reaction speed. It even allows certain strategies like grouping the red triangles or coupling each red triangle with an empty one.
                                 </p>
-                                <p>Made with <a href="http://www.marie-muller.com" target="_blank">Marie</a>.</p>
+                                
+                                <p class="text-left">Appeared on <a class="external-link" href="http://oujevipo.fr/general/3898-the-rose-processor/" target="_blank">L'Oujevipo</a>.</p>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://simonchauvin.itch.io/the-rose-processor" target="_blank">Play</a>.</p>
                             </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/the-rose-processor.png" class="img-fluid" alt="The Rose Processor">
                         </div>
                     </div>
+                </div>
 
-                    <!-- Louis -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">Louis</h4>
-                        <h6 class="project-subtitle text-right">Sandbox | Global Game Jam 2014 | AI</h6>
-                        <a href="#louis" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="louis">
-                            <img src="img/projects/louis.png" class="img-fluid" alt="Louis">
-                        </a>
-                        <div class="collapse" id="louis">
-                            <div class="well text-justify">
-                                <p><a href="http://globalgamejam.org/2014/games/louis" target="_blank">Play</a>.</p>
-                                <p>
-                                    Louis is a pretty weird game about exploring a peculiar character’s inner mechanisms. Louis is feeling pretty bad and we don’t know why but we can show him around. It’ll make him feel better until he just can’t take it anymore…
+                <!-- Down the Line -->
+                <div class="project-thumbnail col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                    <h4 class="project-thumbnail-title text-center">Down the Line</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-down-the-line"><img src="img/projects/down-the-line_thumbnail.png" class="img-fluid" alt="Down the Line"></a>
+                    </div>
+                </div>
+                <div id="project-down-the-line" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Down the Line</h3>
+                            <h6 class="text-center">-&nbsp;2013&nbsp;-</h6>
+                            <h6 class="text-center"><em>Abstract</em> | <em>Ludum Dare 26</em> | <em>Puzzle</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>Down The Line</strong> is the game I made for the 26th Ludum Dare on Minimalism. It gathered enough positive votes to be in the top 100 games of the competition!
                                 </p>
-                                <p>Made with <a href="http://www.guillaumelevieux.com/" target="_blank">Guillaume</a> and <a href="http://smader.interaction-project.net/" target="_blank">Stéphanie</a>.</p>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://simonchauvin.itch.io/down-the-line" target="_blank">Play</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/down-the-line.png" class="img-fluid" alt="Down the Line">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Boulevard Descat -->
+                <div class="project-thumbnail col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                    <h4 class="project-thumbnail-title text-center">Boulevard Descat</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-boulevard-descat"><img src="img/projects/boulevard-descat_thumbnail.png" class="img-fluid" alt="Boulevard Descat"></a>
+                    </div>
+                </div>
+                <div id="project-boulevard-descat" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Boulevard Descat</h3>
+                            <h6 class="text-center">-&nbsp;2014&nbsp;-</h6>
+                            <h6 class="text-center"><em>Arduino</em> | <em>Zoo Machines</em> | <em>Electronics</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>Boulevard Descat</strong> is hidden somewhere on the street. It's there for people to find. It cannot be moved, it is fixed with cement in a wall somewhere around Tourcoing, near Lille in France.
+                                    It allows anyone with a 9 volts battery to record a melody if, and only if, that person is capable of playing the previous recorded melody.
+                                </p>
+                                
+                                <p class="text-left">
+                                    Made with <a class="external-link" href="http://www.gaelbourhis.com/" target="_blank">Gaël</a>, <a class="external-link" href="https://annagavaldakedavra.itch.io/" target="_blank">Romain</a>, <a class="external-link" href="http://joon.be/" target="_blank">Joon</a> and <a class="external-link" href="http://metalchouchen.com/" target="_blank">Damien</a>.
+                                </p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://www.youtube-nocookie.com/embed/ybJgbAe6IrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Ne Quittez Pas -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">Ne Quittez Pas</h4>
-                        <h6 class="project-subtitle text-right">Audio | Zoo Machines 2015 | Android</h6>
-                        <a href="#nequittezpas" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="nequittezpas">
-                            <img src="img/projects/nequittezpas.png" class="img-fluid" alt="Ne Quittez Pas">
-                        </a>
-                        <div class="collapse" id="nequittezpas">
-                            <div class="well text-justify">
-                                <p><a href="http://www.lechantducygne.com/nequittezpas/" target="_blank">Website</a>.</p>
-                                <p>
+                </div>
+
+                <!-- Overflowed -->
+                <div class="project-thumbnail col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                    <h4 class="project-thumbnail-title text-center">Overflowed</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-overflowed"><img src="img/projects/overflowed_thumbnail.png" class="img-fluid" alt="Overflowed"></a>
+                    </div>
+                </div>
+                <div id="project-overflowed" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Overflowed</h3>
+                            <h6 class="text-center">-&nbsp;2011&nbsp;-</h6>
+                            <h6 class="text-center"><em>Flash</em> | <em>Multiplayer</em> | <em>Tactical</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    Probably my first game ever made as a developer. A two-player tactical game featuring quick but intense matches.
+                                </p>
+                                
+                                <p class="text-left">Made with <a class="external-link" href="http://twitter.com/GuillaumeGMazas" target="_blank">Guillaume</a>.</p>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://simonchauvin.itch.io/overflowed" target="_blank">Play</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/overflowed.png" class="img-fluid" alt="Overflowed">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- {FM.js(engine);} -->
+                <div class="project-thumbnail col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                    <h4 class="project-thumbnail-title text-center">{FM.js(engine);}</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-fm-js-engine"><img src="img/projects/fm-js-engine_thumbnail.png" class="img-fluid" alt="{FM.js(engine);}"></a>
+                    </div>
+                </div>
+                <div id="project-fm-js-engine" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">{FM.js(engine);}</h3>
+                            <h6 class="text-center">-&nbsp;2013&nbsp;-</h6>
+                            <h6 class="text-center"><em>2D Game Engine</em> | <em>JavaScript</em> | <em>HTML5</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    My own personal JavaScript 2D game engine. It is based on the HTML5 Canvas API and it runs on any browser supporting Canvas. It comes with all the basics for game development like state management, animated sprites, camera and input handling, tiled maps, basic physics and collisions management, a particle system and a basic pathfinding component.
+                                </p>
+                                
+                                <p class="text-left">>&nbsp;<a class="external-link" href="http://simonchauvin.github.io/FM.js-Engine/" target="_blank">Website</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/fm-js-engine.png" class="img-fluid" alt="{FM.js(engine);}">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- The Core of Life -->
+                <div class="project-thumbnail col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                    <h4 class="project-thumbnail-title text-center">The Core of Life</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-the-core-of-life"><img src="img/projects/the-core-of-life_thumbnail.png" class="img-fluid" alt="The Core of Life"></a>
+                    </div>
+                </div>
+                <div id="project-the-core-of-life" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">The Core of Life</h3>
+                            <h6 class="text-center">-&nbsp;2012&nbsp;-</h6>
+                            <h6 class="text-center"><em>Sandbox</em> | <em>Global Game Jam</em> | <em>Ecosystem</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>The Core of Life</strong> is an abstract ecosystem that the player has to understand and alter in order to make the universe shrinking slower.
+                                </p>
+                                
+                                <p>Made with <a class="external-link" href="http://www.marie-muller.com" target="_blank">Marie</a>.</p>
+                                
+                                <p>>&nbsp;<a class="external-link" href="http://simonchauvin.itch.io/the-core-of-life" target="_blank">Play</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/the-core-of-life.png" class="img-fluid" alt="The Core of Life">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ne Quittez Pas -->
+                <div class="project-thumbnail col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+                    <h4 class="project-thumbnail-title text-center">Ne Quittez Pas</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-ne-quittez-pas"><img src="img/projects/nequittezpas_thumbnail.png" class="img-fluid" alt="Ne Quittez Pas"></a>
+                    </div>
+                </div>
+                <div id="project-ne-quittez-pas" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Ne Quittez Pas</h3>
+                            <h6 class="text-center">-&nbsp;2015&nbsp;-</h6>
+                            <h6 class="text-center"><em>Audio</em> | <em>Zoo Machines</em> | <em>Mobile</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
                                     A bureaucratic nightmare for everyone.
                                 </p>
-                                <p>Made with <a href="http://www.gaelbourhis.com/" target="_blank">Gaël</a>, <a href="https://annagavaldakedavra.itch.io/" target="_blank">Romain</a>, <a href="https://twitter.com/Ibrahim_Lancoln" target="_blank">Ibrahim</a>, <a href="https://twitter.com/ElizabethMaler" target="_blank">Elizabeth</a> and <a href="https://twitter.com/PierreStempin" target="_blank">Pierre</a>.</p>
+                                
+                                <p class="text-left">Made with <a class="external-link" href="http://www.gaelbourhis.com/" target="_blank">Gaël</a>, <a class="external-link" href="https://annagavaldakedavra.itch.io/" target="_blank">Romain</a>, <a class="external-link" href="https://twitter.com/Ibrahim_Lancoln" target="_blank">Ibrahim</a>, <a class="external-link" href="https://twitter.com/ElizabethMaler" target="_blank">Elizabeth</a> and <a class="external-link" href="https://twitter.com/PierreStempin" target="_blank">Pierre</a>.</p>
+                                
+                                <p class="text-left"><a class="external-link" href="http://www.lechantducygne.com/nequittezpas/" target="_blank">Website</a>.</p>
                             </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/nequittezpas.png" class="img-fluid" alt="Ne Quittez Pas">
                         </div>
                     </div>
+                </div>
 
-                    <!-- Botanicum Processore -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">Botanicum Processore</h4>
-                        <h6 class="project-subtitle text-right">Audio | Geolocation | Transmedia</h6>
-                        <a href="#botanicumprocessore" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="botanicumprocessore">
+                <!-- Botanicum Processore -->
+                <div class="project-thumbnail col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+                    <h4 class="project-thumbnail-title text-center">Botanicum Processore</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-botanicum-processore"><img src="img/projects/botanicumprocessore_thumbnail.png" class="img-fluid" alt="Botanicum Processore"></a>
+                    </div>
+                </div>
+                <div id="project-botanicum-processore" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Botanicum Processore</h3>
+                            <h6 class="text-center">-&nbsp;2014&nbsp;-</h6>
+                            <h6 class="text-center"><em>Audio</em> | <em>Geolocation</em> | <em>Transmedia</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    Build a sound garden and listen to it in the square garden Émile Chautemps in Paris.
+                                </p>
+                                
+                                <p class="text-left">Made with <a class="external-link" href="http://www.marie-muller.com" target="_blank">Marie</a> and <a class="external-link" href="https://annagavaldakedavra.itch.io/" target="_blank">Romain</a>.</p>
+                                
+                                <p class="text-left"><a class="external-link" href="http://www.lechantducygne.com/botanicumprocessore/" target="_blank">Website</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
                             <img src="img/projects/botanicumprocessore.png" class="img-fluid" alt="Botanicum Processore">
-                        </a>
-                        <div class="collapse" id="botanicumprocessore">
-                            <div class="well text-justify">
-                                <p><a href="http://www.lechantducygne.com/botanicumprocessore/" target="_blank">Website</a>.</p>
-                                <p>
-                                    Build a sound landscape and go listen to it in the square garden Émile Chautemps in Paris.
-                                </p>
-                                <p>Made with <a href="http://www.marie-muller.com" target="_blank">Marie</a> and <a href="https://annagavaldakedavra.itch.io/" target="_blank">Romain</a>.</p>
-                            </div>
                         </div>
                     </div>
-                    
-                    <!-- {FM.js(engine);} -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">{FM.js(engine);}</h4>
-                        <h6 class="project-subtitle text-right">2D Game Engine | JavaScript | HTML5</h6>
-                        <a href="#fmjsengine" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="fmjsengine">
-                            <img src="img/projects/fm-js-engine.png" class="img-fluid" alt="{FM.js(engine);}">
-                        </a>
-                        <div class="collapse" id="fmjsengine">
-                            <div class="well text-justify">
-                                <p><a href="http://simonchauvin.github.io/FM.js-Engine/" target="_blank">Website</a>.</p>
-                                <p>
-                                    My own personal JavaScript 2D game engine.
+                </div>
+                
+                <!-- Louis -->
+                <div class="project-thumbnail col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+                    <h4 class="project-thumbnail-title text-center">Louis</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-louis"><img src="img/projects/louis_thumbnail.png" class="img-fluid" alt="Louis"></a>
+                    </div>
+                </div>
+                <div id="project-louis" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Louis</h3>
+                            <h6 class="text-center">-&nbsp;2014&nbsp;-</h6>
+                            <h6 class="text-center"><em>Sandbox</em> | <em>Global Game Jam</em> | <em>AI</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>Louis</strong> is a pretty weird game about exploring a peculiar character’s inner mechanisms. Louis is feeling pretty bad and we don’t know why but we can show him around. It’ll make him feel better until he just can’t take it anymore…
                                 </p>
-                                <p>
-                                    It is based on the HTML5 Canvas API and it runs on any browser supporting Canvas.
-                                </p>
-                                <p>
-                                    It comes with all the basics for game development like state management, animated sprites, camera and input handling, tiled maps, basic physics and collisions management, a particle system and a basic pathfinding component.
-                                </p>
+                                
+                                <p class="text-left">Made with <a class="external-link" href="http://www.guillaumelevieux.com/" target="_blank">Guillaume</a> and <a class="external-link" href="http://smader.interaction-project.net/" target="_blank">Stéphanie</a>.</p>
+                                
+                                <p class="text-left"><a class="external-link" href="http://globalgamejam.org/2014/games/louis" target="_blank">Play</a>.</p>
                             </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <img src="img/projects/louis.png" class="img-fluid" alt="Louis">
                         </div>
                     </div>
-
-                    <!-- Work Me -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">Work Me</h4>
-                        <h6 class="project-subtitle text-right">Sandbox | Natural Language Processing | L-system</h6>
-                        <a href="#workme" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="workme">
+                </div>
+                
+                <!-- Work Me -->
+                <div class="project-thumbnail col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+                    <h4 class="project-thumbnail-title text-center">Work Me</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-work-me"><img src="img/projects/work-me_thumbnail.png" class="img-fluid" alt="Work Me"></a>
+                    </div>
+                </div>
+                <div id="project-work-me" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Work Me</h3>
+                            <h6 class="text-center">-&nbsp;2013&nbsp;-</h6>
+                            <h6 class="text-center"><em>Sandbox</em> | <em>Natural Language Processing</em> | <em>L-system</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>Work Me</strong> is a game where the player writes to a plant to make it grow in certain ways. Some words and sentences make the plant grow higher and thiner or simply larger for example. The player has to discover the different ways she can grow the plant and use it to built her own unique plant.
+                                </p>
+                                
+                                <p class="text-left">Made with <a class="external-link" href="http://www.marie-muller.com" target="_blank">Marie</a> for the Retro (No) Future Games Festival 2013.</p>
+                                
+                                <p class="text-left">Appeared on <a class="external-link" href="http://oujevipo.fr/10-minutes/975-work-me/" target="_blank">L'Oujevipo</a>.</p>
+                                
+                                <p class="text-left"><a class="external-link" href="http://simonchauvin.itch.io/work-me" target="_blank">Play</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
                             <img src="img/projects/work-me.png" class="img-fluid" alt="Work Me">
-                        </a>
-                        <div class="collapse" id="workme">
-                            <div class="well text-justify">
-                                <p><a href="http://simonchauvin.itch.io/work-me" target="_blank">Play</a>.</p>
-                                <p>
-                                    Work Me is a game where the player writes to a plant to make it grow in certain ways. Some words and sentences make the plant grow higher and thiner or simply larger for example. The player has to discover the different ways she can grow the plant and use it to built her own unique plant.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NewsLeaks -->
+                <div class="project-thumbnail col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+                    <h4 class="project-thumbnail-title text-center">NewsLeaks</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-newsleaks"><img src="img/projects/newsleaks_thumbnail.png" class="img-fluid" alt="NewsLeaks"></a>
+                    </div>
+                </div>
+                <div id="project-newsleaks" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">NewsLeaks</h3>
+                            <h6 class="text-center">-&nbsp;2011&nbsp;-</h6>
+                            <h6 class="text-center"><em>Journalism</em> | <em>MMOG</em> | <em>RSS</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>NewsLeaks</strong> is a massively multi-player Facebook game on which I worked very hard for a couple of months, sadly we had to stop the development for many good reasons, like internship for instance. NewsLeaks makes you play a chief editor and manage actual news from actual sources. It was supposed to allow coopetitive multiplayer gameplay through the selection of news by multiple players inside a journal. The news selected were supposed to create new subjective realities just like actual journals create, a news that no one is talking about is as good as inexistent.
                                 </p>
-                                <p>Made with <a href="http://www.marie-muller.com" target="_blank">Marie</a> for the Retro (No) Future Games Festival 2013.</p>
-                                <p>Appeared on <a href="http://oujevipo.fr/10-minutes/975-work-me/" target="_blank">L'Oujevipo</a>.</p>
+                                
+                                <p class="text-left">Student project made with <a class="external-link" href="https://annagavaldakedavra.itch.io/" target="_blank">Romain</a>, <a class="external-link" href="http://www.marie-muller.com" target="_blank">Marie</a>, <a class="external-link" href="http://simonrolland.carbonmade.com/" target="_blank">Simon</a>, <a class="external-link" href="http://munkka.carbonmade.com/" target="_blank">Mathilde</a> and <a class="external-link" href="http://twitter.com/sylvain_p_" target="_blank">Sylvain</a> for the Hits Playtime contest 2011.</p>
+                                
+                                <p class="text-left"><a class="external-link" href="http://youtu.be/iz1A9xCzxPM" target="_blank">Trailer</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://www.youtube-nocookie.com/embed/iz1A9xCzxPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- NewsLeaks -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">NewsLeaks</h4>
-                        <h6 class="project-subtitle text-right">Journalism | MMOG | RSS</h6>
-                        <a href="#newsleaks" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="newsleaks">
-                            <img src="img/projects/newsleaks.png" class="img-fluid" alt="NewsLeaks">
-                        </a>
-                        <div class="collapse" id="newsleaks">
-                            <div class="well text-justify">
-                                <p><a href="http://youtu.be/iz1A9xCzxPM" target="_blank">Trailer</a>.</p>
-                                <p>
-                                    NewsLeaks is a massively multi-player Facebook game on which I worked very hard for a couple of months, sadly we had to stop the development for many good reasons, like internship for instance.
-                                </p>
-                                <p>
-                                    NewsLeaks makes you play a chief editor and manage actual news from actual sources. It was supposed to allow coopetitive multiplayer gameplay through the selection of news by multiple players inside a journal. The news selected were supposed to create new subjective realities just like actual journals create, a news that no one is talking about is as good as inexistent.
-                                </p>
-                                <p>Student project made with <a href="https://annagavaldakedavra.itch.io/" target="_blank">Romain</a>, <a href="http://www.marie-muller.com" target="_blank">Marie</a>, <a href="http://simonrolland.carbonmade.com/" target="_blank">Simon</a>, <a href="http://munkka.carbonmade.com/" target="_blank">Mathilde</a> and <a href="http://twitter.com/sylvain_p_" target="_blank">Sylvain</a> for the Hits Playtime contest 2011.</p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
-                    <!-- Stream -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">Stream</h4>
-                        <h6 class="project-subtitle text-right">Puzzle | ENJMIN | Time manipulation</h6>
-                        <a href="#stream" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="stream">
-                            <img src="img/projects/stream.png" class="img-fluid" alt="Stream">
-                        </a>
-                        <div class="collapse" id="stream">
-                            <div class="well text-justify">
-                                <p><a href="projects/stream" target="_blank">Website</a>.</p>
-                                <p>
-                                    Stream has been awarded the e-Magiciens/SACD price during the e-Magiciens Festival 2011.
-                                    You can also find a <a href="http://sortiv.com/?p=1515" target="_blank">review</a> of the game and an <a href="http://sortiv.com/?p=1606" target="_blank">interview</a> of the team, made by Jordan Rivas.
+                <!-- Stream -->
+                <div class="project-thumbnail col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+                    <h4 class="project-thumbnail-title text-center">Stream</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-stream"><img src="img/projects/stream_thumbnail.png" class="img-fluid" alt="Stream"></a>
+                    </div>
+                </div>
+                <div id="project-stream" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Stream</h3>
+                            <h6 class="text-center">-&nbsp;2011&nbsp;-</h6>
+                            <h6 class="text-center"><em>Puzzle</em> | <em>ENJMIN</em> | <em>Time manipulation</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>Stream</strong> is a first person time exploration space.
                                 </p>
-                                <p>Student project made at <a href="http://enjmin.fr/" target="_blank">ENJMIN</a> with <a href="http://pixelstream.fr/" target="_blank">Rémi Chapelain</a>, <a href="http://www.linkedin.com/in/jfducreux" target="_blank">Jean-François Ducreux</a>, <a href="http://www.linkedin.com/in/kfaure" target="_blank">Kevin Faure</a>, <a href="http://www.linkedin.com/pub/pierre-antoine-favre/15/a80/bb3" target="_blank">Pierre-Antoine Favre</a>, <a href="http://colin-galletto.com/" target="_blank">Colin Galletto</a> and <a href="https://www.linkedin.com/in/francklanglet/en" target="_blank">Franck Langlet</a>.</p>
+                                
+                                <p class="text-left">Awarded with the e-Magiciens/SACD price during the e-Magiciens Festival 2011.</p>
+                                
+                                <p class="text-left">
+                                    <a class="external-link" href="http://sortiv.com/?p=1515" target="_blank">Review</a> of the game and an <a class="external-link" href="http://sortiv.com/?p=1606" target="_blank">interview</a> of the team, made by Jordan Rivas.
+                                </p>
+                                
+                                <p class="text-left">Student project made at <a class="external-link" href="http://enjmin.fr/" target="_blank">ENJMIN</a> with <a class="external-link" href="http://pixelstream.fr/" target="_blank">Rémi Chapelain</a>, <a class="external-link" href="http://www.linkedin.com/in/jfducreux" target="_blank">Jean-François Ducreux</a>, <a class="external-link" href="http://www.linkedin.com/in/kfaure" target="_blank">Kevin Faure</a>, <a class="external-link" href="http://www.linkedin.com/pub/pierre-antoine-favre/15/a80/bb3" target="_blank">Pierre-Antoine Favre</a>, <a class="external-link" href="http://colin-galletto.com/" target="_blank">Colin Galletto</a> and <a class="external-link" href="https://www.linkedin.com/in/francklanglet/en" target="_blank">Franck Langlet</a>.</p>
+                                
+                                <p class="text-left"><a class="external-link" href="projects/stream" target="_blank">Website</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://player.vimeo.com/video/104743201?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay;"></iframe>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Wave Me -->
-                    <div class="project project-other col-md-3 col-sm-6">
-                        <h4 class="project-title text-center">Wave Me</h4>
-                        <h6 class="project-subtitle text-right">Alternative control | ENJMIN | Soundwave</h6>
-                        <a href="#waveme" class="thumbnail btn" data-toggle="collapse" aria-expanded="false" aria-controls="waveme">
-                            <img src="img/projects/waveme.png" class="img-fluid" alt="Wave Me">
-                        </a>
-                        <div class="collapse" id="waveme">
-                            <div class="well text-justify">
-                                <p><a href="projects/waveme" target="_blank">Website</a>.</p>
-                                <p>
-                                    Wave Me is an action video game allowing you to play as a sound wave across different levels. In order to get through the game you need to use some of the sound wave properties which are rebounds and wavelength. Each bounce allows you to modify your trajectory but reduces the life of the sound wave. The gameplay is optimization-based in the way that the more you play the less you waste life on rebounds. A novice will get an intense action game while the experienced one will enjoy a more peaceful experience.
+                <!-- Wave Me -->
+                <div class="project-thumbnail col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+                    <h4 class="project-thumbnail-title text-center">Wave Me</h4>
+                    <div class="project-thumbnail-img">
+                        <a href="#project-wave-me"><img src="img/projects/waveme_thumbnail.png" class="img-fluid" alt="Wave Me"></a>
+                    </div>
+                </div>
+                <div id="project-wave-me" class="project-container col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <h3 class="title text-center">Wave Me</h3>
+                            <h6 class="text-center">-&nbsp;2011&nbsp;-</h6>
+                            <h6 class="text-center"><em>Alternative control</em> | <em>ENJMIN</em> | <em>Soundwave</em></h6>
+                            
+                            <div class="project-desc">
+                                <p class="text-justify">
+                                    <strong>Wave Me</strong> is an action video game allowing you to play as a sound wave across different levels. In order to get through the game you need to use some of the sound wave properties which are rebounds and wavelength. Each bounce allows you to modify your trajectory but reduces the life of the sound wave. The gameplay is optimization-based in the way that the more you play the less you waste life on rebounds. A novice will get an intense action game while the experienced one will enjoy a more peaceful experience.
                                 </p>
-                                <p>Student project made at <a href="http://enjmin.fr/" target="_blank">ENJMIN</a> with <a href="http://www.linkedin.com/pub/alban-chagnoleau/17/a88/173/en" target="_blank">Alban Chagnoleau</a>, <a href="http://www.linkedin.com/pub/germain-mazac/12/a92/492" target="_blank">Germain Mazac</a>, <a href="http://www.linkedin.com/in/benjaminmichenaud" target="_blank">Benjamin Michenaud</a> and <a href="http://simonrolland.carbonmade.com/" target="_blank">Simon Rolland</a>.</p>
+                                
+                                <p class="text-left">Student project made at <a class="external-link" href="http://enjmin.fr/" target="_blank">ENJMIN</a> with <a class="external-link" href="http://www.linkedin.com/pub/alban-chagnoleau/17/a88/173/en" target="_blank">Alban Chagnoleau</a>, <a class="external-link" href="http://www.linkedin.com/pub/germain-mazac/12/a92/492" target="_blank">Germain Mazac</a>, <a class="external-link" href="http://www.linkedin.com/in/benjaminmichenaud" target="_blank">Benjamin Michenaud</a> and <a class="external-link" href="http://simonrolland.carbonmade.com/" target="_blank">Simon Rolland</a>.</p>
+                                
+                                <p class="text-left"><a class="external-link" href="projects/waveme" target="_blank">Website</a>.</p>
+                            </div>
+                            
+                            <p class="back-to-projects"><a class="local-link" href="#">Back</a>.</p>
+                        </div>
+                        
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="project-video" src="https://player.vimeo.com/video/104743202?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay;"></iframe>
                             </div>
                         </div>
                     </div>
+                </div>
+                
+            </div>
+        </div> <!-- /PROJECTS -->
+        
+        <!-- ABOUT -->
+        <div id="about" class="container">
+            <div class="row">
+                <div class="sub-section sub-section-right col-12">
+                    <a name="sub-section-about">
+                        <h4 class="sub-section-title text-right">About</h4>
+                    </a>
                 </div>
             </div>
             
-            <h3 class="text-right-lg text-right-md text-right-sm text-center-xs">[ About ]</h3>
-            <hr>
-
-            <!-- ABOUT -->
-            <div class="about">
-                <a name="about"></a>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 text-justify">
-                        <h4>Game Developer</h4>
-                        <p>
-                            I create video games as a game designer and programmer, often alone <a href="http://pixelserieux.com/" target="_blank">but</a> <a href="https://twitter.com/GuillaumeGMazas" target="_blank">also</a> <a href="http://www.gaelbourhis.com/" target="_blank">with</a> <a href="https://annagavaldakedavra.itch.io/" target="_blank">some</a> <a href="http://www.marie-muller.com/" target="_blank">very</a> <a href="http://guillaumelevieux.com/" target="_blank">talented</a> <a href="http://smader.interaction-project.net/" target="_blank">individuals</a>.
-                            I particularly enjoy games with a strong focus on simple mechanics, proceduralism and/or expressiveness.
-                        </p>
-                        <p>
-                            I’m also part of <a href="http://www.lechantducygne.com" target="_blank">Le Chant du cygne</a> game collective. We regularly attend festivals and game jams. We are also working on a huge project inspired by Arthur C. Clarke's Rama.
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-sm-6 text-justify">
-                        <h4>PhD candidate and lecturer</h4>
-                        <p>
-                            I am a PhD candidate at the Conservatory of Arts and Crafts in Paris. I am mainly concerned with the potential narratives in emergent games that make extensive use of procedurally generated content.
-                        </p>
-                        <p>
-                            Since 2011 I have taught computer science, videogame development, game design and level design at the <a href="http://www.univ-paris13.fr/" target="_blank">University Paris XIII</a>, <a href="http://www.u-psud.fr" target="_blank">University Paris Sud</a>, <a href="http://www.cnam.fr/" target="_blank">CNAM</a> and <a href="http://www.ican-design.fr/" target="_blank">ICAN</a>.
-                        </p>
-                    </div>
+            <div class="row">
+                
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <h5 class="title text-left">Game Developer</h5>
+                    <p class="text-justify">
+                        I create video games as a game designer and programmer, often alone <a class="external-link" href="http://pixelserieux.com/" target="_blank">but</a> <a class="external-link" href="https://twitter.com/GuillaumeGMazas" target="_blank">also</a> <a class="external-link" href="http://www.gaelbourhis.com/" target="_blank">with</a> <a class="external-link" href="https://annagavaldakedavra.itch.io/" target="_blank">some</a> <a class="external-link" href="http://www.marie-muller.com/" target="_blank">very</a> <a class="external-link" href="http://guillaumelevieux.com/" target="_blank">talented</a> <a class="external-link" href="http://smader.interaction-project.net/" target="_blank">individuals</a>.
+                        I particularly enjoy making games with a strong focus on simple mechanics and expressiveness.
+                    </p>
+                    <p class="text-justify">
+                        I'm also part of <a class="external-link" href="http://www.lechantducygne.com" target="_blank">Le Chant du cygne</a> game collective. We regularly attend festivals and game jams. We are also working on a major project called <a class="external-link" href="http://havre-game.com/" target="_blank">Havre</a>.
+                    </p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <h5 class="title text-left">PhD candidate and lecturer</h5>
+                    <p class="text-justify">
+                        I am a <a class="external-link" href="https://scholar.google.fr/citations?user=TfwgWzkAAAAJ&hl=en&oi=ao" target="_blank">PhD</a> candidate at the Conservatory of Arts and Crafts in Paris. I am mainly concerned with the potential narratives in emergent games that make extensive use of procedurally generated content.
+                    </p>
+                    <p class="text-justify">
+                        Since 2011 I have taught computer science, videogame development, game design and level design at the <a class="external-link" href="http://www.univ-paris13.fr/" target="_blank">University Paris XIII</a>, <a class="external-link" href="http://www.u-psud.fr" target="_blank">University Paris Sud</a>, <a class="external-link" href="http://www.cnam.fr/" target="_blank">CNAM</a> and <a class="external-link" href="http://www.ican-design.fr/" target="_blank">ICAN</a>.
+                    </p>
+                </div>
+                
+            </div>
+        </div> <!-- /ABOUT -->
+        
+        <!-- FOOTER -->
+        <div id="footer" class="container">
+            
+            <div class="row text-center">
+                <div class="footer-text col-12">
+                    <h6>-</h6>
+                    <h6>&copy; Simon Chauvin 2019</h6>
                 </div>
             </div>
-
-            <hr>
-
-            <!-- FOOTER -->
-            <div class="footer">
-                <div class="row text-center">
-                    <div class="col-md-4 col-sm-12">
-                        <p><a href="#home" class="local-link">Back to top</a></p>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <p>&copy; Simon Chauvin 2017</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="text-right-lg text-right-md text-center-sm text-center-xs">
-                            <p><a href="mailto:contact@simonchauvin.com"><img src="img/email.svg" width="25" alt="email"></a> | <a href="http://www.twitter.com/SimonChauvin"><img src="img/twitter.png" width="25" alt="twitter"></a> | <a href="http://www.github.com/simonchauvin"><img src="img/github.png" width="25" alt="github"></a> | <a href="http://simonchauvin.itch.io/"><img src="img/itchio.svg" width="25" alt="itch.io"></a> | <a href="http://www.linkedin.com/in/chauvinsimon"><img src="img/linkedin.png" width="25" alt="linkedin"></a></p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div> <!-- /container -->
+            
+        </div> <!-- /FOOTER -->
     
         <!-- Bootstrap core JavaScript
     ================================================== -->

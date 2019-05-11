@@ -14,38 +14,15 @@
     font-style: normal;
 }
 
-
-/* Header */
-
-.menu a {
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff2') format('woff2'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
-    text-decoration: none;
-    color: inherit;
-}
-
-.menu a:hover,
-.menu a:focus {
-    font-style: normal;
-    color: #000;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.title {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 30px;
-}
-
-.title a {
-    font-style: normal;
-    text-decoration: none;
-    color: inherit;
-}
-
-.title a:hover,
-.title a:focus {
-    color: #000;
 }
 
 .text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
@@ -130,93 +107,144 @@
     }
 }
 
-/* Body */
+/* Global */
 
 body {
     font-family: "open_sansregular";
-    color: #555;
-    background-color: #fdfdfe;
+    color: #444;
+    background-color: #fafafa;
+}
+
+/* Header */
+
+#header {
     padding-top: 20px;
-    padding-bottom: 20px;
 }
 
-
-/* Thumbnails */
-
-.thumbnail {
-    padding: 0px;
-    border: 1px solid #555;
-    border-radius: 0px;
+.header-icons {
+    
 }
-
-a.thumbnail:focus {
-    border: 1px solid #555;
-}
-
-a.thumbnail:hover,
-a.thumbnail:active {
-    border: 1px solid #555;
-    opacity: 0.5;
-    filter: alpha(opacity=5);
-}
-
 
 /* Sections */
 
-.section,
-.section:focus,
-.section:hover {
+.sub-section {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
+}
+
+.sub-section-right {
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-right-color: #ccc;
+}
+
+.sub-section-left {
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #ccc;
+}
+
+.sub-section-title,
+.sub-section-title:focus,
+.sub-section-title:hover {
     font-style: normal;
     text-decoration: none;
 }
 
-.project {
-    margin-bottom: 16px;
+/* Projects */
+
+#projects {
+    margin-top: 15px;
 }
 
-.project .project-title{
-    color: #000;
-    position: absolute;
-    top: 16px;
-    left: 32px;
+.project-thumbnail {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+}
+
+.project-container {
     display: none;
 }
 
-.project .project-subtitle{
-    color: #000;
+.project-desc {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.project-thumbnail .project-thumbnail-title{
+    color: #fff;
+    visibility: hidden;
+    margin: auto;
     position: absolute;
-    bottom: 16px;
-    right: 32px;
-    display: none;
+    top: 50px; left: 0; bottom: 0; right: 0;
 }
 
-.project-other {
-    margin-bottom: 8px;
+.project-thumbnail-img {
+    background-color: #000;
 }
 
-.project-other .project-title{
-    font-size: 1rem;
+.project-thumbnail-img img {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
-.project-other .project-subtitle{
-    font-size: 0.8rem;
+.back-to-projects{
+    margin: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 /* Texts */
 
-.local-link,
+.title {
+    font-family: "open_sanssemibold";
+    color: #888;
+}
+
+.local-link {
+    color: #fafafa;
+    background-color: rgb(230, 125, 125);
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 .local-link:hover,
 .local-link:focus {
-    color: #DDD;
+    font-style: normal;
+    color: #444;
+    text-decoration: none;
+    
 }
 
-.well {
-    color: #272F32;
-    background-color: #FFF;
-    border-style: none;
-    border-radius: 0px;
+.external-link {
+    color: inherit;
+    text-decoration: underline;
 }
 
-.well a {
-    color: #E23F33;
+.external-link:hover,
+.external-link:focus {
+    font-style: normal;
+    color: rgb(230, 125, 125);
+    text-decoration: underline;
+}
+
+/* About */
+
+#about {
+    margin-top: 15px;
+}
+
+/* Footer */
+
+#footer {
+    padding-bottom: 20px;
+}
+
+.footer-text {
+    
 }
