@@ -176,12 +176,27 @@ body {
     margin-bottom: 40px;
 }
 
-.project-thumbnail .project-thumbnail-title{
+.project-thumbnail-title{
     color: #fff;
     visibility: hidden;
     margin: auto;
     position: absolute;
-    top: 50px; left: 0; bottom: 0; right: 0;
+    left: 0; bottom: 0; right: 0;
+}
+
+.project-in-progress .project-thumbnail-title{
+    font-size: 1.5em;
+    top: 50px;
+}
+
+.project-recent .project-thumbnail-title{
+    font-size: 1.25em;
+    top: 40px;
+}
+
+.project-earlier .project-thumbnail-title{
+    font-size: 1em;
+    top: 30px;
 }
 
 .project-thumbnail-img {
