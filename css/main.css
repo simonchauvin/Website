@@ -39,45 +39,30 @@ body {
     padding-top: 20px;
 }
 
-.header-icons {
-    
-}
-
 /* Sections */
 
-.sub-section {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #ccc;
+.section {
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #ccc;
 }
 
-.sub-section-right {
+.section-left {
     border-right-style: solid;
     border-right-width: 5px;
     border-right-color: #ccc;
 }
 
-.sub-section-left {
+.section-right {
     border-left-style: solid;
     border-left-width: 5px;
     border-left-color: #ccc;
 }
 
-.sub-section-title,
-.sub-section-title:focus,
-.sub-section-title:hover {
-    font-style: normal;
-    text-decoration: none;
-}
-
 /* Projects */
-
-#projects {
-    margin-top: 15px;
-}
 
 .project-thumbnail {
     border-style: solid;
@@ -112,7 +97,6 @@ body {
 }
 
 .back-to-projects{
-    margin: auto;
     position: absolute;
     bottom: 0;
 }
@@ -151,29 +135,29 @@ body {
     text-decoration: underline;
 }
 
-.project-in-progress .project-thumbnail-title{
+#projects-in-progress .project-thumbnail-title{
     font-size: 1.5em;
     top: 50px;
 }
 
-.project-recent .project-thumbnail-title{
+#projects-recent .project-thumbnail-title{
     font-size: 1.25em;
     top: 40px;
 }
 
-.project-earlier .project-thumbnail-title{
+#projects-earlier .project-thumbnail-title{
     font-size: 0.9em;
     top: 30px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .project-earlier .project-thumbnail-title{
+    #projects-earlier .project-thumbnail-title{
         font-size: 0.8em;
         top: 20px;
     }
     
-    .project-recent .project-thumbnail-title{
+    #projects-recent .project-thumbnail-title{
         font-size: 1.1em;
         top: 25px;
     }
@@ -181,12 +165,12 @@ body {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .project-earlier .project-thumbnail-title{
+    #projects-earlier .project-thumbnail-title{
         font-size: 0.9em;
         top: 30px;
     }
     
-    .project-recent .project-thumbnail-title{
+    #projects-recent .project-thumbnail-title{
         font-size: 1.2em;
         top: 35px;
     }
@@ -194,12 +178,12 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .project-earlier .project-thumbnail-title{
+    #projects-earlier .project-thumbnail-title{
         font-size: 1em;
         top: 20px;
     }
     
-    .project-recent .project-thumbnail-title{
+    #projects-recent .project-thumbnail-title{
         font-size: 1.2em;
         top: 35px;
     }
@@ -207,29 +191,19 @@ body {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .project-earlier .project-thumbnail-title{
+    #projects-earlier .project-thumbnail-title{
         font-size: 1em;
         top: 30px;
     }
     
-    .project-recent .project-thumbnail-title{
+    #projects-recent .project-thumbnail-title{
         font-size: 1.25em;
         top: 40px;
     }
-}
-
-/* About */
-
-#about {
-    margin-top: 15px;
 }
 
 /* Footer */
 
 #footer {
     padding-bottom: 20px;
-}
-
-.footer-text {
-    
 }

@@ -1,94 +1,87 @@
-var currentSection = null;
+var currentProjectsContainer = null;
 var currentProject = null;
 var currentVideoUrl = null;
 
-var url = window.location.href;
-var startUrlPos = url.search('#project-');
-if (startUrlPos > 0)
-{
-    showProject(url.substr(startUrlPos, url.length - startUrlPos));
-}
+var url = null;
+var startUrlPos = null;
 
-$('.project-thumbnail-img').find('a').click(
-    function(){
-        //location.href = "#home";
-    }
-);
 
-$(".project-thumbnail").hover(
-    function(){
-        $(this).find(".project-thumbnail-title").css("visibility", "visible");
-        
-        $(this).find(".project-thumbnail-img img").css({opacity: 0.2});
-        $(this).find(".project-thumbnail-img img").css({filter: 'alpha(opacity=20)'});
-    },
-    function(){
-        $(this).find(".project-thumbnail-title").css("visibility", "hidden");
-        
-        $(this).find(".project-thumbnail-img img").css({opacity: 1});
-        $(this).find(".project-thumbnail-img img").css({filter: 'alpha(opacity=100)'});
-    }
-);
+$(document).ready(function(){
+    url = window.location.href;
+    startUrlPos = url.search('#project-');
 
-$('#projects').find('.project-thumbnail').click(
-    function(){ 
-        showProject($(this).find("a").attr("href"));
-        
-        return false; 
+    if (startUrlPos > 0)
+    {
+        showProject(url.substr(startUrlPos, url.length - startUrlPos));
     }
-);
+
+});
+
+
+$(".project-thumbnail").hover(function(){
+    $(this).find(".project-thumbnail-title").css("visibility", "visible");
+    
+    $(this).find(".project-thumbnail-img img").css({opacity: 0.2});
+    $(this).find(".project-thumbnail-img img").css({filter: 'alpha(opacity=20)'});
+}, function(){
+    $(this).find(".project-thumbnail-title").css("visibility", "hidden");
+    
+    $(this).find(".project-thumbnail-img img").css({opacity: 1});
+    $(this).find(".project-thumbnail-img img").css({filter: 'alpha(opacity=100)'});
+});
+
+$('.project-thumbnail').click(function(){
+    if (currentProject != null)
+    {
+        hideCurrentProject();
+    }
+
+    showProject($(this).find("a").attr("href"));
+    
+    return false; 
+});
 
 function showProject(projectId) {
-    currentSection = $('#projects');
+    currentProject = $(projectId);
+    currentProjectsContainer = currentProject.closest('.projects-container');
     
-    currentSection.find('.project-thumbnail').hide();
+    currentProjectsContainer.find('.project-thumbnail').hide();
     
-    if ($(projectId).parent().hasClass('project-in-progress'))
+    if (currentProject.find('.project-video'))
     {
-        currentSection.find('#sub-section-recent').hide();
-        currentSection.find('#sub-section-earlier').hide();
+        currentVideoUrl = currentProject.find('.project-video').attr('src');
     }
-    else if ($(projectId).parent().hasClass('project-recent'))
-    {
-        currentSection.find('#sub-section-in-progress').hide();
-        currentSection.find('#sub-section-earlier').hide();
-    }
-    else if ($(projectId).parent().hasClass('project-earlier'))
-    {
-        currentSection.find('#sub-section-in-progress').hide();
-        currentSection.find('#sub-section-recent').hide();
-    }
-    
-    if ($(projectId).find('.project-video'))
-    {
-        currentVideoUrl = $(projectId).find('.project-video').attr('src');
-    }
-    
-    currentProject = projectId;
-    
-    location.href = currentProject;
-    
-    $(currentProject).show();
+
+    currentProject.show();
+
+    var scrollTop = $(window).scrollTop();
+    location.href = projectId;
+    $(window).scrollTop(scrollTop);
 }
 
-$('.back-to-projects').click(function(){ 
+function hideCurrentProject()
+{
     if (currentVideoUrl)
     {
-        $(currentProject).find('.project-video').attr('src', '');
-        $(currentProject).find('.project-video').attr('src', currentVideoUrl);
+        currentProject.find('.project-video').attr('src', '');
+        currentProject.find('.project-video').attr('src', currentVideoUrl);
         
         currentVideoUrl = null;
     }
     
-    $(currentProject).hide();
-    
-    $(currentSection).find('.project-thumbnail').show();
-    currentSection.find('.sub-section').show();
-    
-    location.href = "#";
-    
-    currentSection = null;
+    currentProject.hide();
+    currentProjectsContainer.find('.project-thumbnail').show();
+
+    currentProjectsContainer = null;
     currentProject = null;
+    
+    var scrollTop = $(window).scrollTop();
+    location.href = "#home";
+    $(window).scrollTop(scrollTop);
+}
+
+$('.back-to-projects').click(function(){ 
+    hideCurrentProject();
     
     return false;
 });
