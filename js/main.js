@@ -75,7 +75,9 @@ function hideCurrentProject()
     currentProjectsContainer = null;
     currentProject = null;
     
+    var scrollTop = $(window).scrollTop();
     location.href = "#";
+    $(window).scrollTop(scrollTop);
 }
 
 $('.back-to-projects').click(function(){ 
