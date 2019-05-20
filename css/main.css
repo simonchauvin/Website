@@ -79,7 +79,6 @@ body {
 
 .project-desc {
     margin-top: 25px;
-    margin-bottom: 40px;
 }
 
 .project-thumbnail-title {
@@ -100,7 +99,7 @@ body {
 }
 
 .back-to-projects{
-    
+    margin-bottom: 10px;
 }
 
 /* Texts */
