@@ -2,33 +2,11 @@
    Author's custom styles
    ========================================================================== */
 
-/* Fonts */
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
-         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sanssemibold';
-    src: url('../fonts/OpenSans-Semibold-webfont.eot');
-    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Semibold-webfont.woff2') format('woff2'),
-         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Global */
 
 body {
-    font-family: "open_sansregular";
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     color: #444;
     background-color: #fafafa;
 
@@ -106,7 +84,8 @@ body {
 /* Texts */
 
 .title {
-    font-family: "open_sanssemibold";
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     color: #888;
 }
 
