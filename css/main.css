@@ -24,12 +24,13 @@ body {
 /* Sections */
 
 .section {
-    padding-bottom: 15px;
-    padding-top: 15px;
-
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: #ccc;
+}
+
+.projects-row {
+    padding: 16px;
 }
 
 .section-left {
@@ -47,13 +48,17 @@ body {
 /* Projects */
 
 .project-thumbnail {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #fafafa;
+    padding: 3px;
 }
 
 .project-container {
     display: none;
+    padding: 3px;
+}
+
+.about-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .project-desc {
