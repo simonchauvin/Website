@@ -24,25 +24,25 @@ body {
 /* Sections */
 
 .section {
-    border-top-style: solid;
+    border-top-style: dashed;
     border-top-width: 1px;
     border-top-color: #ccc;
 }
 
 .projects-row {
-    padding: 16px;
+    padding: 12px;
 }
 
 .section-left {
-    border-right-style: solid;
-    border-right-width: 5px;
-    border-right-color: #ccc;
-}
-
-.section-right {
     border-left-style: solid;
     border-left-width: 5px;
     border-left-color: #ccc;
+}
+
+.section-right {
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-right-color: #ccc;
 }
 
 /* Projects */
