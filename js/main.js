@@ -1,4 +1,4 @@
-var currentProjectsContainer = null;
+var currentSection = null;
 var currentProject = null;
 var currentVideoUrl = null;
 
@@ -12,11 +12,13 @@ $(document).ready(function(){
 
     if (startUrlPos > 0)
     {
-        showProject(url.substr(startUrlPos, url.length - startUrlPos));
+        var project = $(url.substr(startUrlPos, url.length - startUrlPos));
+
+        hideSection(project.parents(".section"));
+        showProject(project);
     }
 
 });
-
 
 $(".project-thumbnail").hover(function(){
     $(this).find(".project-thumbnail-title").css("visibility", "visible");
@@ -30,22 +32,74 @@ $(".project-thumbnail").hover(function(){
     $(this).find(".project-thumbnail-img img").css({filter: 'alpha(opacity=100)'});
 });
 
-$('.project-thumbnail').click(function(){
+$('.project-thumbnail').click(function(){ // Click on thumbnail
     if (currentProject != null)
     {
         hideCurrentProject();
+        showSection();
     }
 
-    showProject($(this).find("a").attr("href"));
+    hideSection($(this).parents(".section"));
+
+    showProject($($(this).find("a").attr("href")));
     
-    return false; 
+    return false;
 });
 
-function showProject(projectId) {
-    currentProject = $(projectId);
-    currentProjectsContainer = currentProject.closest('.projects-container');
+$('.previous-project').click(function(){ // Click on prev
+    hideCurrentProject();
+
+    var prevProjects = $(this).parents('.project-container').prevAll('.project-container');
+    if (prevProjects.length > 0)
+    {
+        showProject(prevProjects.first());
+    }
+    else
+    {
+        showSection();
+    }
     
-    currentProjectsContainer.find('.project-thumbnail').hide();
+    return false;
+});
+
+$('.back-to-projects').click(function(){ // Click on back
+    hideCurrentProject();
+
+    showSection();
+    
+    return false;
+});
+
+$('.next-project').click(function(){ // Click on next
+    hideCurrentProject();
+
+    var nextProjects = $(this).parents('.project-container').nextAll('.project-container');
+    if (nextProjects.length > 0)
+    {
+        showProject(nextProjects.first());
+    }
+    else
+    {
+        showSection();
+    }
+    
+    return false;
+});
+
+function showSection()
+{
+    currentSection.find('.project-thumbnail').show();
+    currentSection = null;
+}
+
+function hideSection(section)
+{
+    currentSection = section;
+    currentSection.find('.project-thumbnail').hide();
+}
+
+function showProject(projectElem) {
+    currentProject = projectElem;
     
     if (currentProject.find('.project-video'))
     {
@@ -55,7 +109,7 @@ function showProject(projectId) {
     currentProject.show();
 
     var scrollTop = $(window).scrollTop();
-    location.href = projectId;
+    location.href = "#" + currentProject.attr("id");
     $(window).scrollTop(scrollTop);
 }
 
@@ -70,18 +124,9 @@ function hideCurrentProject()
     }
     
     currentProject.hide();
-    currentProjectsContainer.find('.project-thumbnail').show();
-
-    currentProjectsContainer = null;
     currentProject = null;
     
     var scrollTop = $(window).scrollTop();
     location.href = "#";
     $(window).scrollTop(scrollTop);
 }
-
-$('.back-to-projects').click(function(){ 
-    hideCurrentProject();
-    
-    return false;
-});

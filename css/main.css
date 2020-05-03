@@ -29,10 +29,6 @@ body {
     border-top-color: #ccc;
 }
 
-.projects-row {
-    padding: 12px;
-}
-
 .section-left {
     border-left-style: solid;
     border-left-width: 5px;
@@ -46,6 +42,10 @@ body {
 }
 
 /* Projects */
+
+.projects-row {
+    padding: 12px;
+}
 
 .project-thumbnail {
     padding: 3px;
@@ -82,7 +82,7 @@ body {
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
-.back-to-projects{
+.project-button{
     margin-bottom: 10px;
 }
 
