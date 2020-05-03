@@ -2,6 +2,8 @@ var currentSection = null;
 var currentProject = null;
 var currentVideoUrl = null;
 
+var currentScrollTop = $(window).scrollTop(); // Used to prevent resetting of position when changing location.href
+
 var url = null;
 var startUrlPos = null;
 
@@ -33,6 +35,8 @@ $(".project-thumbnail").hover(function(){
 });
 
 $('.project-thumbnail').click(function(){ // Click on thumbnail
+    currentScrollTop = $(window).scrollTop();
+
     if (currentProject != null)
     {
         hideCurrentProject();
@@ -47,6 +51,8 @@ $('.project-thumbnail').click(function(){ // Click on thumbnail
 });
 
 $('.previous-project').click(function(){ // Click on prev
+    currentScrollTop = $(window).scrollTop();
+
     hideCurrentProject();
 
     var prevProjects = $(this).parents('.project-container').prevAll('.project-container');
@@ -63,6 +69,8 @@ $('.previous-project').click(function(){ // Click on prev
 });
 
 $('.back-to-projects').click(function(){ // Click on back
+    currentScrollTop = $(window).scrollTop();
+
     hideCurrentProject();
 
     showSection();
@@ -71,6 +79,8 @@ $('.back-to-projects').click(function(){ // Click on back
 });
 
 $('.next-project').click(function(){ // Click on next
+    currentScrollTop = $(window).scrollTop();
+
     hideCurrentProject();
 
     var nextProjects = $(this).parents('.project-container').nextAll('.project-container');
@@ -108,9 +118,8 @@ function showProject(projectElem) {
 
     currentProject.show();
 
-    var scrollTop = $(window).scrollTop();
     location.href = "#" + currentProject.attr("id");
-    $(window).scrollTop(scrollTop);
+    $(window).scrollTop(currentScrollTop);
 }
 
 function hideCurrentProject()
@@ -126,7 +135,6 @@ function hideCurrentProject()
     currentProject.hide();
     currentProject = null;
     
-    var scrollTop = $(window).scrollTop();
     location.href = "#";
-    $(window).scrollTop(scrollTop);
+    $(window).scrollTop(currentScrollTop);
 }
