@@ -86,6 +86,10 @@ body {
     margin-bottom: 10px;
 }
 
+.project-button:hover{
+    background-color: #ccc;
+}
+
 /* Texts */
 
 .title {
