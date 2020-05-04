@@ -62,7 +62,7 @@ $('.previous-project').click(function(){ // Click on prev
     }
     else
     {
-        showSection();
+        showProject($(this).parents('.project-container').nextAll('.project-container').last());
     }
 
     resetScrollPosition(scrollTop);
@@ -94,7 +94,7 @@ $('.next-project').click(function(){ // Click on next
     }
     else
     {
-        showSection();
+        showProject($(this).parents('.project-container').prevAll('.project-container').last());
     }
 
     resetScrollPosition(scrollTop);
