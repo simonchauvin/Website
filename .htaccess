@@ -7,7 +7,7 @@
 
 RewriteEngine on
 Rewritecond %{HTTP_HOST} ^simonchauvin.com$
-Rewriterule ^(.*) https://www.simonchauvin.com/$1 [QSA,L,R=301]
+Rewriterule ^(.*) http://www.simonchauvin.com/$1 [QSA,L,R=301]
 
 ErrorDocument 404 /404.html
 
