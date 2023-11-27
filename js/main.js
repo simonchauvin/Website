@@ -23,13 +23,15 @@ $(document).ready(function(){
 $(".project-thumbnail").hover(function(){
     $(this).find(".project-thumbnail-title").css("visibility", "visible");
     
-    $(this).find(".project-thumbnail-img img").css({opacity: 0.2});
+    $(this).find(".project-thumbnail-img img").css({opacity: 0.4});
     $(this).find(".project-thumbnail-img img").css({filter: 'alpha(opacity=20)'});
+    $(this).find(".project-thumbnail-img img").css({filter: 'blur(2px)'});
 }, function(){
     $(this).find(".project-thumbnail-title").css("visibility", "hidden");
     
     $(this).find(".project-thumbnail-img img").css({opacity: 1});
     $(this).find(".project-thumbnail-img img").css({filter: 'alpha(opacity=100)'});
+    $(this).find(".project-thumbnail-img img").css({filter: 'blur(0px)'});
 });
 
 $('.project-thumbnail').click(function(){ // Click on thumbnail
