@@ -25,20 +25,20 @@ body {
 /* Sections */
 
 .section {
-    border-top-style: dashed;
-    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-width: 4px;
     border-top-color: #888;
 }
 
 .section-left {
-    border-left-style: solid;
-    border-left-width: 5px;
+    border-left-style: dashed;
+    border-left-width: 4px;
     border-left-color: #888;
 }
 
 .section-right {
-    border-right-style: solid;
-    border-right-width: 5px;
+    border-right-style: dashed;
+    border-right-width: 4px;
     border-right-color: #888;
 }
 
@@ -50,11 +50,11 @@ body {
 /* Projects */
 
 .projects-row {
-    padding: 12px;
+    padding: 8px;
 }
 
 .project-thumbnail {
-    padding: 3px;
+    padding: 8px;
 }
 
 .project-container {
@@ -63,8 +63,7 @@ body {
 }
 
 .about-container {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 8px;
 }
 
 .project-desc {
@@ -182,5 +181,5 @@ body {
 /* Footer */
 
 #footer {
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 }
