@@ -52,6 +52,20 @@ $('.project-thumbnail').click(function(){ // Click on thumbnail
     return false;
 });
 
+$('.local-link').click(function(){ // Click on thumbnail
+    if (currentProject != null)
+    {
+        hideCurrentProject();
+        showSection();
+    }
+
+    hideSection($($(this).attr("href")).parents(".section"));
+
+    showProject($($(this).attr("href")));
+    
+    return false;
+});
+
 $('.previous-project').click(function(){ // Click on prev
     var scrollTop = $(window).scrollTop();
 
